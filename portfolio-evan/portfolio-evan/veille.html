@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veille technologique — Portfolio Poupard Evan</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='40' fill='%230aa5c2'/%3E%3C/svg%3E">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="nav-brand"><span class="dot"></span>POUPARD EVAN / SIO·SISR</a>
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">MENU</button>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="entreprise.html">Entreprise</a></li>
+          <li><a href="cv.html">CV</a></li>
+          <li><a href="competences.html">Compétences</a></li>
+          <li><a href="situations.html">Situations Pro</a></li>
+          <li><a href="realisations.html">Réalisations</a></li>
+          <li><a href="veille.html" aria-current="page">Veille</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container page-head">
+      <span class="mono">// 06 — Veille technologique</span>
+      <h1>Ma veille technologique</h1>
+      <p class="lead">
+        La veille technologique consiste à surveiller activement l'évolution des
+        technologies, des outils et des menaces dans son domaine professionnel,
+        afin d'anticiper les besoins de son entreprise et de maintenir ses
+        compétences à jour. C'est une démarche continue, structurée et documentée.
+      </p>
+    </section>
+
+    <section class="container">
+      <div class="veille-meta">
+        <div class="item">
+          <span class="mono">Méthode</span>
+          <p style="font-size: 0.95rem;">Agrégateur RSS (Feedly), newsletters spécialisées, comptes
+          experts sur LinkedIn et Twitter, podcasts hebdomadaires.</p>
+        </div>
+        <div class="item">
+          <span class="mono">Fréquence</span>
+          <p style="font-size: 0.95rem;">Lecture quotidienne (~20 min le matin) et synthèse mensuelle des
+          informations marquantes dans un document Markdown versionné sur GitHub.</p>
+        </div>
+        <div class="item">
+          <span class="mono">Sources principales</span>
+          <p style="font-size: 0.95rem;">CERT-FR, Le Monde Informatique, Korben, Bleeping Computer,
+          The Hacker News, blogs officiels Microsoft / Cisco / Fortinet.</p>
+        </div>
+      </div>
+
+      <div class="theme-block">
+        <h2><span class="num">01</span> Cybersécurité — vulnérabilités et menaces</h2>
+        <p style="color: var(--mute);">
+          Suivi des vulnérabilités critiques (CVE), techniques d'attaque émergentes
+          et bonnes pratiques de défense applicables aux infrastructures Vinci.
+        </p>
+        <div class="cards" style="margin-top: 1.5rem;">
+          <a href="veille/exemple-veille.html" class="card">
+            <span class="num">VEILLE 01</span>
+            <h3>[ Titre du sujet de veille n°1 ]</h3>
+            <p>Bref résumé du sujet et de la solution étudiée.</p>
+            <span class="arrow">Lire l'analyse →</span>
+          </a>
+          <a href="veille/exemple-veille.html" class="card">
+            <span class="num">VEILLE 02</span>
+            <h3>[ Titre du sujet de veille n°2 ]</h3>
+            <p>Bref résumé du sujet et de la solution étudiée.</p>
+            <span class="arrow">Lire l'analyse →</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="theme-block">
+        <h2><span class="num">02</span> Réseau & infrastructure</h2>
+        <p style="color: var(--mute);">
+          Évolutions des protocoles, équipements et solutions de virtualisation
+          pertinentes pour l'infrastructure du groupe.
+        </p>
+        <div class="cards" style="margin-top: 1.5rem;">
+          <a href="veille/exemple-veille.html" class="card">
+            <span class="num">VEILLE 03</span>
+            <h3>[ Titre du sujet de veille n°3 ]</h3>
+            <p>Bref résumé du sujet et de la solution étudiée.</p>
+            <span class="arrow">Lire l'analyse →</span>
+          </a>
+        </div>
+      </div>
+
+      <p style="margin-top: 3rem; color: var(--mute); font-size: 0.95rem;">
+        <strong>Critère bloquant&nbsp;:</strong> 3 exemples de veille minimum sont nécessaires
+        — sinon la note finale est plafonnée à 9/20. Chaque exemple doit comporter contexte,
+        présentation détaillée de la solution, justification de l'intérêt professionnel et
+        conclusion sur l'adoption ou non.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <span class="mono">© 2025 — Poupard Evan · Portfolio BTS SIO 1</span>
+      <div class="footer-links">
+        <a href="mailto:evan.pprd@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/evan-poupard" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const list = document.querySelector('.nav-list');
+    toggle?.addEventListener('click', () => {
+      const open = list.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+  </script>
+</body>
+</html>

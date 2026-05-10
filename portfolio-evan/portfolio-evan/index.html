@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accueil — Portfolio Poupard Evan</title>
+  <meta name="description" content="Portfolio de Poupard Evan, étudiant en BTS SIO SISR à UFITECH, alternant chez Vinci Construction.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='40' fill='%230aa5c2'/%3E%3C/svg%3E">
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="nav-brand">
+        <span class="dot"></span>
+        POUPARD EVAN / SIO·SISR
+      </a>
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">MENU</button>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html" aria-current="page">Accueil</a></li>
+          <li><a href="entreprise.html">Entreprise</a></li>
+          <li><a href="cv.html">CV</a></li>
+          <li><a href="competences.html">Compétences</a></li>
+          <li><a href="situations.html">Situations Pro</a></li>
+          <li><a href="realisations.html">Réalisations</a></li>
+          <li><a href="veille.html">Veille</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="container hero">
+      <div class="hero-text reveal">
+        <div class="hero-meta">
+          <span class="tag">BTS SIO · SISR</span>
+          <span class="mono">2025 — 2027</span>
+        </div>
+
+        <h1>Poupard Evan,<br><span class="accent">technicien informatique</span> en alternance.</h1>
+
+        <p class="lead">
+          Étudiant à UFITECH, alternant chez Vinci Construction.
+          Passionné d'infrastructure réseau et de cybersécurité — ce portfolio
+          documente mes situations professionnelles, compétences et veille
+          technologique au fil de la formation.
+        </p>
+
+        <div class="hero-logos">
+          <img src="assets/img/logo-ufitech.png" alt="Logo UFITECH">
+          <span class="sep" aria-hidden="true"></span>
+          <img src="assets/img/logo-vinci.png" alt="Logo Vinci Construction">
+        </div>
+      </div>
+
+      <div class="hero-photo reveal">
+        <!-- Remplace le placeholder par : <img src="assets/img/photo.jpg" alt="Poupard Evan"> -->
+        <div class="hero-photo-placeholder">
+          [ assets/img/photo.jpg ]<br>
+          Ajoute ta photo ici
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ QUICK NAV CARDS ============ -->
+    <section class="container section">
+      <span class="mono">// Explorer le portfolio</span>
+      <div class="cards" style="margin-top: 1.2rem;">
+        <a href="entreprise.html" class="card reveal">
+          <span class="num">01</span>
+          <h3>Entreprise</h3>
+          <p>Présentation de Vinci Construction et de ma mission de technicien informatique en alternance.</p>
+          <span class="arrow">Découvrir →</span>
+        </a>
+        <a href="competences.html" class="card reveal">
+          <span class="num">02</span>
+          <h3>Compétences</h3>
+          <p>Vue d'ensemble des compétences acquises en entreprise et à l'école, alignées sur le référentiel E4.</p>
+          <span class="arrow">Consulter →</span>
+        </a>
+        <a href="situations.html" class="card reveal">
+          <span class="num">03</span>
+          <h3>Situations professionnelles</h3>
+          <p>Missions concrètes réalisées en entreprise : contexte, déroulé technique et résultats.</p>
+          <span class="arrow">Voir les missions →</span>
+        </a>
+        <a href="veille.html" class="card reveal">
+          <span class="num">04</span>
+          <h3>Veille technologique</h3>
+          <p>Suivi de l'actualité IT et cybersécurité, méthode de veille et exemples détaillés.</p>
+          <span class="arrow">Lire la veille →</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <span class="mono">© 2025 — Poupard Evan · Portfolio BTS SIO 1</span>
+      <div class="footer-links">
+        <a href="mailto:evan.pprd@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/evan-poupard" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Toggle menu mobile
+    const toggle = document.querySelector('.nav-toggle');
+    const list = document.querySelector('.nav-list');
+    toggle?.addEventListener('click', () => {
+      const open = list.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+  </script>
+</body>
+</html>
