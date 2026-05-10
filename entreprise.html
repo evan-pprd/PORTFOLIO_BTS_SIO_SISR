@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entreprise — Portfolio Poupard Evan</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='40' fill='%230aa5c2'/%3E%3C/svg%3E">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="nav-brand"><span class="dot"></span>POUPARD EVAN / SIO·SISR</a>
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">MENU</button>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="entreprise.html" aria-current="page">Entreprise</a></li>
+          <li><a href="cv.html">CV</a></li>
+          <li><a href="competences.html">Compétences</a></li>
+          <li><a href="situations.html">Situations Pro</a></li>
+          <li><a href="realisations.html">Réalisations</a></li>
+          <li><a href="veille.html">Veille</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container page-head">
+      <span class="mono">// 01 — Entreprise d'accueil</span>
+      <h1>Vinci Construction</h1>
+      <p class="lead">Mon entreprise d'alternance, où j'occupe un poste de technicien informatique au sein du service IT.</p>
+    </section>
+
+    <section class="container two-col">
+      <div>
+        <div class="info-block">
+          <span class="mono">À propos</span>
+          <h3>Présentation de l'entreprise</h3>
+          <p>
+            <!-- À COMPLÉTER : 5 à 8 lignes décrivant Vinci Construction (secteur, taille, activités, implantation) -->
+            Vinci Construction est l'un des principaux acteurs mondiaux du secteur de la
+            construction. Filiale du groupe Vinci, l'entreprise intervient sur des projets de
+            bâtiment, de génie civil, d'infrastructure et de services associés.
+            [Complète ici avec les chiffres clés, le périmètre de l'agence/site sur lequel
+            tu travailles, l'organisation du service IT et les outils utilisés.]
+          </p>
+        </div>
+
+        <div class="info-block">
+          <span class="mono">Implantation</span>
+          <h3>Site / agence</h3>
+          <p>
+            <!-- À COMPLÉTER : où es-tu basé, taille du site, nombre d'utilisateurs supportés -->
+            [Précise le site sur lequel tu es affecté, le nombre d'utilisateurs supportés
+            par le service IT, et tes interlocuteurs principaux.]
+          </p>
+        </div>
+      </div>
+
+      <div>
+        <div class="info-block">
+          <span class="mono">Mission</span>
+          <h3>Mon poste de technicien informatique</h3>
+          <p>
+            <!-- À COMPLÉTER : décris précisément ta mission au sein de l'entreprise -->
+            En tant qu'alternant technicien informatique, j'interviens en support
+            de l'équipe IT sur :
+          </p>
+          <ul style="margin: 0.8rem 0 0 1.4rem; color: var(--mute);">
+            <li>la gestion du parc informatique (postes, périphériques, mobiles) ;</li>
+            <li>le support utilisateur de niveau 1 et 2 ;</li>
+            <li>la maintenance et l'évolution de l'infrastructure réseau ;</li>
+            <li>la mise en service de nouveaux équipements ;</li>
+            <li>[ajoute tes missions spécifiques].</li>
+          </ul>
+        </div>
+
+        <div class="info-block">
+          <span class="mono">Tutorat</span>
+          <h3>Encadrement & alternance</h3>
+          <p>
+            <!-- À COMPLÉTER : ton rythme alternance, ton tuteur, l'organisation -->
+            Rythme d'alternance : [par exemple 2 semaines en entreprise / 1 semaine à l'école].
+            Tuteur en entreprise : [Nom — fonction]. Référent pédagogique : [Nom].
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <span class="mono">© 2025 — Poupard Evan · Portfolio BTS SIO 1</span>
+      <div class="footer-links">
+        <a href="mailto:evan.pprd@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/evan-poupard" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const list = document.querySelector('.nav-list');
+    toggle?.addEventListener('click', () => {
+      const open = list.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+  </script>
+</body>
+</html>
