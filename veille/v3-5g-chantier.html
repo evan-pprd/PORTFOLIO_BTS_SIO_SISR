@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>5G en entreprise pour sites distants — Portfolio Poupard Evan</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='40' fill='%2360C6EC'/%3E%3C/svg%3E">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="../index.html" class="nav-brand"><span class="dot"></span>POUPARD EVAN / SIO·SISR</a>
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">MENU</button>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="../entreprise.html">Entreprise</a></li>
+          <li><a href="../cv.html">CV</a></li>
+          <li><a href="../competences.html">Compétences</a></li>
+          <li><a href="../situations.html">Situations Pro</a></li>
+          <li><a href="../realisations.html">Réalisations</a></li>
+          <li><a href="../veille.html" aria-current="page">Veille</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container page-head">
+      <a href="../veille.html" class="mono" style="text-decoration: none;">← Retour à la veille</a>
+      <span class="mono" style="display:block; margin-top: 1.5rem;">// VEILLE 03 · THÈME&nbsp;: RÉSEAU &amp; INFRASTRUCTURE</span>
+      <h1>La 5G fixe comme connectivité de site distant</h1>
+    </section>
+
+    <section class="container detail">
+
+      <aside class="detail-aside">
+        <span class="label">Sommaire</span>
+        <ul>
+          <li><a href="#contexte">Contexte</a></li>
+          <li><a href="#solution">Présentation</a></li>
+          <li><a href="#interet">Intérêt pour l'entreprise</a></li>
+          <li><a href="#conclusion">Conclusion</a></li>
+        </ul>
+      </aside>
+
+      <article class="detail-body">
+
+        <h2 id="contexte">Contexte</h2>
+        <p>
+          Lors de l'ouverture d'un chantier, la connectivité est l'un des
+          premiers besoins à couvrir. Aujourd'hui, sur les petits chantiers,
+          la solution mise en place repose sur un FortiWifi accompagné d'un
+          <strong>routeur 4G de secours</strong>. Cette architecture fonctionne,
+          mais le débit de la 4G montre rapidement ses limites lorsque
+          plusieurs collaborateurs utilisent simultanément des applications
+          gourmandes (synchronisation OneDrive, plans partagés via le
+          SharePoint, visioconférences Teams).
+        </p>
+        <p>
+          Le sujet de la <strong>5G en accès fixe (Fixed Wireless Access)</strong>
+          est apparu plusieurs fois dans mes lectures comme une alternative
+          crédible aux liens filaires sur les sites où le déploiement d'une
+          fibre est impossible, trop long, ou trop coûteux. Compte tenu du
+          nombre de chantiers que nous ouvrons et fermons chaque année, le
+          sujet m'a semblé directement pertinent.
+        </p>
+
+        <h2 id="solution">Présentation du sujet</h2>
+        <p>
+          La 5G fixe propose d'utiliser le réseau mobile 5G d'un opérateur
+          comme accès Internet principal d'un site, via un boîtier dédié
+          (routeur 5G ou modem 5G CPE). Les avantages clés mis en avant&nbsp;:
+        </p>
+        <ul>
+          <li>débits descendants pouvant atteindre plusieurs centaines de Mb/s
+              dans les zones bien couvertes ;</li>
+          <li>déploiement en quelques heures ;</li>
+          <li>portabilité&nbsp;: le boîtier peut être démonté et redéployé sur
+              un autre site à la fin du chantier ;</li>
+          <li>possibilité de combiner 5G + fibre dans une configuration
+              <em>SD-WAN</em> pour bénéficier d'un lien redondant.</li>
+        </ul>
+
+        <h3>Points de vigilance</h3>
+        <ul>
+          <li>la qualité dépend fortement de la couverture réelle de
+              l'opérateur sur la zone géographique du chantier ;</li>
+          <li>la latence reste supérieure à un lien fibre et peut gêner
+              certaines applications temps réel ;</li>
+          <li>le coût des abonnements professionnels 5G avec débit garanti
+              reste à comparer au coût d'un raccordement temporaire.</li>
+        </ul>
+
+        <h3>Sources suivies</h3>
+        <ul>
+          <li><strong>Blogs opérateurs</strong> (Orange Business, SFR Business, Bouygues Telecom Entreprises) — études de cas ;</li>
+          <li><strong>Documentation Fortinet</strong> sur l'intégration de la 5G dans une politique SD-WAN.</li>
+        </ul>
+
+        <h2 id="interet">Intérêt pour l'entreprise</h2>
+        <p>
+          Pour Vinci Construction et les agences régionales comme celle du
+          Mercantour, cette technologie pourrait faire évoluer le standard
+          de déploiement réseau de chantier&nbsp;:
+        </p>
+        <ul>
+          <li>améliorer significativement le confort des utilisateurs sur les
+              sites où la 4G actuelle est limitante ;</li>
+          <li>simplifier la logistique en remplaçant la solution 4G
+              actuelle par un boîtier 5G plus performant, sans modification
+              majeure de l'architecture (le FortiWifi reste en place) ;</li>
+          <li>servir, en combinaison avec un lien filaire, à fiabiliser
+              les chantiers stratégiques où une coupure de réseau aurait
+              un fort impact opérationnel.</li>
+        </ul>
+
+        <h2 id="conclusion">Conclusion</h2>
+        <p>
+          Au stade actuel de ma veille, la 5G fixe n'est pas une solution à
+          adopter en remplacement systématique de l'existant, mais une
+          option à évaluer chantier par chantier en fonction de la couverture
+          opérateur et de la taille du site.
+        </p>
+
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <span class="mono">© 2025 — Poupard Evan · Portfolio BTS SIO 1</span>
+      <div class="footer-links">
+        <a href="mailto:evan.pprd@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/evan-poupard" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const list = document.querySelector('.nav-list');
+    toggle?.addEventListener('click', () => {
+      const open = list.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+  </script>
+</body>
+</html>

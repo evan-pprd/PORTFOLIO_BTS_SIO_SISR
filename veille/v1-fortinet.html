@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vulnérabilités Fortinet — Portfolio Poupard Evan</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='40' fill='%2360C6EC'/%3E%3C/svg%3E">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="../index.html" class="nav-brand"><span class="dot"></span>POUPARD EVAN / SIO·SISR</a>
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">MENU</button>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="../entreprise.html">Entreprise</a></li>
+          <li><a href="../cv.html">CV</a></li>
+          <li><a href="../competences.html">Compétences</a></li>
+          <li><a href="../situations.html">Situations Pro</a></li>
+          <li><a href="../realisations.html">Réalisations</a></li>
+          <li><a href="../veille.html" aria-current="page">Veille</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container page-head">
+      <a href="../veille.html" class="mono" style="text-decoration: none;">← Retour à la veille</a>
+      <span class="mono" style="display:block; margin-top: 1.5rem;">// VEILLE 01 · THÈME&nbsp;: CYBERSÉCURITÉ</span>
+      <h1>Suivi des vulnérabilités Fortinet</h1>
+    </section>
+
+    <section class="container detail">
+
+      <aside class="detail-aside">
+        <span class="label">Sommaire</span>
+        <ul>
+          <li><a href="#contexte">Contexte</a></li>
+          <li><a href="#solution">Présentation</a></li>
+          <li><a href="#interet">Intérêt pour l'entreprise</a></li>
+          <li><a href="#conclusion">Conclusion</a></li>
+        </ul>
+      </aside>
+
+      <article class="detail-body">
+
+        <h2 id="contexte">Contexte</h2>
+        <p>
+          Les chantiers de Vinci Construction sont équipés de pare-feux et points
+          d'accès <strong>Fortinet</strong> (FortiGate, FortiWifi). Ces équipements
+          constituent le point d'entrée du réseau de chaque site distant et sont,
+          par nature, des cibles privilégiées d'attaques&nbsp;: une faille non
+          corrigée sur un FortiGate exposé peut permettre à un attaquant
+          d'atteindre l'agence.
+        </p>
+        <p>
+          J'ai découvert ce sujet en suivant l'actualité du <strong>CERT-FR</strong>
+          (l'agence nationale qui publie des alertes de sécurité)&nbsp;: plusieurs
+          avis critiques concernant FortiOS y sont publiés chaque trimestre.
+          Comprendre comment ces vulnérabilités fonctionnent et comment elles
+          sont corrigées m'a paru indispensable, étant donné que je manipule
+          régulièrement ces équipements lors de l'ouverture de chantiers.
+        </p>
+
+        <h2 id="solution">Présentation du sujet</h2>
+        <p>
+          La veille porte sur deux axes complémentaires&nbsp;:
+        </p>
+        <ul>
+          <li>les <strong>vulnérabilités publiées</strong> (CVE) qui concernent
+              FortiOS, FortiGate et FortiWifi, leur niveau de gravité ;</li>
+          <li>les <strong>bonnes pratiques de durcissement</strong> recommandées
+              par Fortinet et le CERT-FR&nbsp;: restriction de l'interface
+              d'administration, désactivation des services exposés non utilisés,
+              mise en place de l'authentification multi-facteurs pour les
+              administrateurs, application rapide des correctifs.</li>
+        </ul>
+
+        <h3>Sources suivies</h3>
+        <ul>
+          <li><strong>CERT-FR</strong> — avis et alertes officiels (<code>cert.ssi.gouv.fr</code>) ;</li>
+          <li><strong>Fortinet PSIRT</strong> — page éditeur listant les CVE corrigées (<code>fortiguard.com/psirt</code>).</li>
+        </ul>
+
+        <figure>
+          <img src="../assets/screenshots/v1-certfr-fortinet.png" alt="Avis CERT-FR concernant FortiOS">
+          <figcaption>Figure — Extrait d'un avis CERT-FR relatif à une vulnérabilité FortiOS.</figcaption>
+        </figure>
+
+        <h2 id="interet">Intérêt pour l'entreprise</h2>
+        <p>
+          Au quotidien, cette veille me permet&nbsp;:
+        </p>
+        <ul>
+          <li>d'alerter rapidement les ingénieurs réseaux lorsqu'une CVE critique
+              touche un équipement déjà déployé sur nos chantiers ;</li>
+          <li>de comprendre les choix de configuration imposés par le template
+              centralisé (restriction de l'interface, fermeture de services par
+              défaut) — sujets que je ne maîtrisais pas en arrivant ;</li>
+          <li>d'anticiper les fenêtres de mise à jour à planifier sur les sites
+              les plus exposés.</li>
+        </ul>
+
+        <h2 id="conclusion">Conclusion</h2>
+        <p>
+          Cette veille s'est imposée naturellement comme un complément
+          indispensable à ma mission d'ouverture de chantiers. Elle n'aboutit
+          pas à l'adoption d'une « solution » unique mais à une vigilance&nbsp;:
+          intégrer le suivi des vulnérabilités à mon réflexe quotidien, au même
+          titre que les autres étapes de déploiement.
+        </p>
+
+        <h3>Sources</h3>
+        <ul>
+          <li><a href="https://www.cert.ssi.gouv.fr/" target="_blank" rel="noopener">cert.ssi.gouv.fr</a> — avis CERT-FR</li>
+          <li><a href="https://www.fortiguard.com/psirt" target="_blank" rel="noopener">fortiguard.com/psirt</a> — bulletins de sécurité Fortinet</li>
+        </ul>
+
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <span class="mono">© 2025 — Poupard Evan · Portfolio BTS SIO 1</span>
+      <div class="footer-links">
+        <a href="mailto:evan.pprd@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/evan-poupard" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const list = document.querySelector('.nav-list');
+    toggle?.addEventListener('click', () => {
+      const open = list.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+  </script>
+</body>
+</html>

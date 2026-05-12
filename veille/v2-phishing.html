@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phishing et sensibilisation — Portfolio Poupard Evan</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='40' fill='%2360C6EC'/%3E%3C/svg%3E">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="../index.html" class="nav-brand"><span class="dot"></span>POUPARD EVAN / SIO·SISR</a>
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">MENU</button>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="../entreprise.html">Entreprise</a></li>
+          <li><a href="../cv.html">CV</a></li>
+          <li><a href="../competences.html">Compétences</a></li>
+          <li><a href="../situations.html">Situations Pro</a></li>
+          <li><a href="../realisations.html">Réalisations</a></li>
+          <li><a href="../veille.html" aria-current="page">Veille</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container page-head">
+      <a href="../veille.html" class="mono" style="text-decoration: none;">← Retour à la veille</a>
+      <span class="mono" style="display:block; margin-top: 1.5rem;">// VEILLE 02 · THÈME&nbsp;: CYBERSÉCURITÉ</span>
+      <h1>Phishing &amp; sensibilisation des utilisateurs</h1>
+    </section>
+
+    <section class="container detail">
+
+      <aside class="detail-aside">
+        <span class="label">Sommaire</span>
+        <ul>
+          <li><a href="#contexte">Contexte</a></li>
+          <li><a href="#solution">Présentation</a></li>
+          <li><a href="#interet">Intérêt pour l'entreprise</a></li>
+          <li><a href="#conclusion">Conclusion</a></li>
+        </ul>
+      </aside>
+
+      <article class="detail-body">
+
+        <h2 id="contexte">Contexte</h2>
+        <p>
+          Le <strong>hameçonnage (phishing)</strong> reste, année après année,
+          le premier type d'attaque sur les entreprises. Dans mes missions
+          de support quotidien, plusieurs tickets concernent des courriels
+          suspects signalés par des utilisateurs.
+        </p>
+        <p>
+          J'ai commencé à m'intéresser au sujet après avoir traité un ticket
+          impliquant un courriel se faisant passer pour Microsoft 365. La
+          tentative était convaincante&nbsp;: domaine d'expéditeur très proche
+          du vrai, logo officiel, message d'alerte de sécurité crédible.
+        </p>
+
+        <h2 id="solution">Présentation du sujet</h2>
+        <p>
+          La veille couvre deux axes&nbsp;:
+        </p>
+        <ul>
+          <li>l'<strong>évolution des techniques d'hameçonnage</strong>&nbsp;:
+              usurpation de domaine, QR-phishing (quishing), faux portails
+              d'authentification, attaques ciblées par IA générative qui
+              améliorent la qualité des messages frauduleux ;</li>
+          <li>les <strong>moyens de défense</strong>&nbsp;: filtres anti-spam,
+              MFA, campagnes de simulation de phishing pour entraîner les
+              utilisateurs.</li>
+        </ul>
+
+        <h3>Sources suivies</h3>
+        <ul>
+          <li><strong>cybermalveillance.gouv.fr</strong> — alertes grand public ;</li>
+          <li><strong>ANSSI</strong> — recommandations et guides de bonnes pratiques.</li>
+        </ul>
+
+        <h2 id="interet">Intérêt pour l'entreprise</h2>
+        <p>
+          Avec une agence regroupant 100 à 200 collaborateurs et des dizaines
+          de chantiers distants, l'humain reste le maillon le plus exposé.
+          Cette veille m'apporte concrètement&nbsp;:
+        </p>
+        <ul>
+          <li>une <strong>capacité de détection</strong> plus fine lors des
+              tickets liés à des courriels suspects&nbsp;: identifier rapidement
+              un en-tête falsifié, un domaine d'expéditeur trompeur ;</li>
+          <li>un <strong>discours pédagogique</strong> à tenir avec les
+              utilisateurs lors des prises en main à distance (« voici comment
+              vérifier l'URL avant de cliquer ») ;</li>
+          <li>une vision plus claire des <strong>mesures techniques</strong>
+              en place côté infrastructure, ce qui me permet de mieux dialoguer
+              avec les ingénieurs sécurité du groupe.</li>
+        </ul>
+
+        <h2 id="conclusion">Conclusion</h2>
+        <p>
+          Cette veille ne débouche pas sur l'adoption d'un outil unique mais
+          sur une montée en compétence utile à chaque ticket lié
+          à la messagerie. À court terme, je souhaite proposer à mon tuteur
+          une courte fiche pratique destinée aux utilisateurs de l'agence.
+        </p>
+
+        <h3>Sources</h3>
+        <ul>
+          <li><a href="https://cyber.gouv.fr/" target="_blank" rel="noopener">cyber.gouv.fr</a> — site de l'ANSSI</li>
+        </ul>
+
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <span class="mono">© 2025 — Poupard Evan · Portfolio BTS SIO 1</span>
+      <div class="footer-links">
+        <a href="mailto:evan.pprd@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/evan-poupard" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const list = document.querySelector('.nav-list');
+    toggle?.addEventListener('click', () => {
+      const open = list.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+  </script>
+</body>
+</html>

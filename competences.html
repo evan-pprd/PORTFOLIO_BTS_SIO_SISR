@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compétences — Portfolio Poupard Evan</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='40' fill='%2360C6EC'/%3E%3C/svg%3E">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="nav-brand"><span class="dot"></span>POUPARD EVAN / SIO·SISR</a>
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">MENU</button>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="entreprise.html">Entreprise</a></li>
+          <li><a href="cv.html">CV</a></li>
+          <li><a href="competences.html" aria-current="page">Compétences</a></li>
+          <li><a href="situations.html">Situations Pro</a></li>
+          <li><a href="realisations.html">Réalisations</a></li>
+          <li><a href="veille.html">Veille</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container page-head">
+      <span class="mono">// 03 — Référentiel BTS SIO option SISR</span>
+      <h1>Compétences</h1>
+      <p class="lead">
+        Compétences acquises en entreprise et à l'école, conformes aux grilles
+        de notation des épreuves E4 et E5. Chaque compétence renvoie vers la
+        ou les situations professionnelles qui en attestent la maîtrise.
+      </p>
+    </section>
+
+    <section class="container">
+
+      <span class="mono">Épreuve E4 — Support et mise à disposition de services informatiques</span>
+      <div class="cards" style="margin-top: 1.2rem; margin-bottom: 3rem;">
+
+        <a href="competences/c-gerer-patrimoine.html" class="card">
+          <span class="num">E4 · 01</span>
+          <h3>Gérer le patrimoine informatique</h3>
+          <p>Recenser, exploiter les référentiels, gérer les habilitations, la continuité de service et les sauvegardes.</p>
+          <span class="arrow">Voir le détail →</span>
+        </a>
+
+        <a href="competences/c-repondre-incidents.html" class="card">
+          <span class="num">E4 · 02</span>
+          <h3>Répondre aux incidents et aux demandes d'assistance et d'évolution</h3>
+          <p>Collecter, suivre et orienter les demandes ; traiter les incidents réseau, système et applicatifs.</p>
+          <span class="arrow">Voir le détail →</span>
+        </a>
+
+        <a href="competences/c-mettre-disposition.html" class="card">
+          <span class="num">E4 · 03</span>
+          <h3>Mettre à disposition des utilisateurs un service informatique</h3>
+          <p>Réaliser les tests, déployer un service et accompagner les utilisateurs lors de la mise en place.</p>
+          <span class="arrow">Voir le détail →</span>
+        </a>
+
+        <a href="competences/c-mode-projet.html" class="card">
+          <span class="num">E4 · 04</span>
+          <h3>Travailler en mode projet</h3>
+          <p>Analyser les objectifs et l'organisation d'un projet, planifier les activités, suivre les indicateurs.</p>
+          <span class="arrow">Voir le détail →</span>
+        </a>
+
+        <a href="competences/c-developpement-pro.html" class="card">
+          <span class="num">E4 · 05</span>
+          <h3>Organiser son développement professionnel</h3>
+          <p>Mettre en place son environnement d'apprentissage, sa veille et son identité professionnelle.</p>
+          <span class="arrow">Voir le détail →</span>
+        </a>
+      </div>
+
+      <span class="mono">Épreuve E5 — Administration des systèmes et des réseaux (option SISR)</span>
+      <div class="cards" style="margin-top: 1.2rem;">
+
+        <a href="competences/c-concevoir-infra.html" class="card">
+          <span class="num">E5 · 01</span>
+          <h3>Concevoir une solution d'infrastructure réseau</h3>
+          <p>Analyser le besoin, étudier l'impact, élaborer le dossier de choix, maquetter et préparer les tests.</p>
+          <span class="arrow">Voir le détail →</span>
+        </a>
+
+        <a href="competences/c-installer-deployer.html" class="card">
+          <span class="num">E5 · 02</span>
+          <h3>Installer, tester et déployer une solution d'infrastructure réseau</h3>
+          <p>Installer et configurer les éléments d'infrastructure, documenter, tester l'intégration et déployer.</p>
+          <span class="arrow">Voir le détail →</span>
+        </a>
+
+        <a href="competences/c-exploiter-depanner.html" class="card">
+          <span class="num">E5 · 03</span>
+          <h3>Exploiter, dépanner et superviser une solution d'infrastructure réseau</h3>
+          <p>Administrer à distance, automatiser, gérer les indicateurs, qualifier les incidents et maintenir la qualité de service.</p>
+          <span class="arrow">Voir le détail →</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <span class="mono">© 2025 — Poupard Evan · Portfolio BTS SIO 1</span>
+      <div class="footer-links">
+        <a href="mailto:evan.pprd@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/evan-poupard" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const list = document.querySelector('.nav-list');
+    toggle?.addEventListener('click', () => {
+      const open = list.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+  </script>
+</body>
+</html>

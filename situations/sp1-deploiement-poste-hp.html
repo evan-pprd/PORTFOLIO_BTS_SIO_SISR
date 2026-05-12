@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Déploiement d'un poste utilisateur HP — Portfolio Poupard Evan</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='40' fill='%2360C6EC'/%3E%3C/svg%3E">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="../index.html" class="nav-brand"><span class="dot"></span>POUPARD EVAN / SIO·SISR</a>
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">MENU</button>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="../entreprise.html">Entreprise</a></li>
+          <li><a href="../cv.html">CV</a></li>
+          <li><a href="../competences.html">Compétences</a></li>
+          <li><a href="../situations.html" aria-current="page">Situations Pro</a></li>
+          <li><a href="../realisations.html">Réalisations</a></li>
+          <li><a href="../veille.html">Veille</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container page-head">
+      <a href="../situations.html" class="mono" style="text-decoration: none;">← Retour aux situations</a>
+      <span class="mono" style="display:block; margin-top: 1.5rem;">// SITUATION PROFESSIONNELLE 01</span>
+      <h1>Préparation et déploiement d'un poste utilisateur</h1>
+    </section>
+
+    <section class="container detail">
+
+      <aside class="detail-aside">
+        <span class="label">Sommaire</span>
+        <ul>
+          <li><a href="#contexte">Contexte</a></li>
+          <li><a href="#deroule">Déroulé technique</a></li>
+          <li><a href="#conclusion">Conclusion</a></li>
+          <li><a href="#competences">Compétences validées</a></li>
+        </ul>
+      </aside>
+
+      <article class="detail-body">
+
+        <h2 id="contexte">Contexte</h2>
+        <p>
+          Au sein du service informatique de l'agence du Mercantour, la préparation des
+          postes utilisateurs est une mission régulière, déclenchée à chaque nouvelle arrivée
+          ou renouvellement de matériel. L'entreprise a fait le choix d'un parc homogène
+          composé exclusivement de machines <strong>HP</strong>, dans le cadre d'un accord
+          partenaire qui inclut une pré-personnalisation des postes (intégration
+          <strong>Microsoft AutoPilot</strong>, image système UNITY).
+        </p>
+        <p>
+          Mon rôle consiste à finaliser cette préparation à réception du matériel, à
+          configurer le poste en fonction du profil de l'utilisateur final (métier,
+          filiale d'appartenance, applications nécessaires) et à le livrer prêt à l'emploi.
+        </p>
+
+        <h2 id="deroule">Déroulé technique</h2>
+        <p>
+          La procédure se déroule en plusieurs étapes successives, de la réception du
+          carton à la livraison à l'utilisateur.
+        </p>
+
+        <h3>Étape 1 — Vérification de l'intégration AutoPilot</h3>
+        <p>
+          Première vérification au démarrage du poste&nbsp;: s'assurer que le numéro de série
+          a bien été enregistré côté Microsoft AutoPilot. Sans cette intégration, le poste
+          ne pourra pas s'enrôler automatiquement dans Entra ID de l'entreprise
+          et la suite de la procédure échouera.
+        </p>
+
+        <h3>Étape 2 — Connexion au compte professionnel via accès temporaire</h3>
+        <p>
+          Pour initialiser le poste au nom de l'utilisateur final, je me connecte à son
+          compte Microsoft 365 à l'aide d'un <strong>droit d'accès temporaire (Temporary
+          Access Pass)</strong> généré depuis Azure AD. Ce mécanisme évite de manipuler le
+          mot de passe de l'utilisateur tout en permettant la première authentification
+          et la création du profil Windows.
+        </p>
+
+        <h3>Étape 3 — Mises à jour système et constructeur</h3>
+        <p>
+          Une fois le profil créé, je lance les mises à jour&nbsp;:
+        </p>
+        <ul>
+          <li><strong>Windows Update</strong> jusqu'à ce qu'aucune mise à jour ne soit en attente ;</li>
+          <li><strong>HP Image Assistant (HP IA)</strong> pour les pilotes, le firmware et les correctifs constructeur.</li>
+        </ul>
+
+        <h3>Étape 4 — Pack Office et mise à jour</h3>
+        <p>
+          Connexion à la suite <strong>Microsoft 365</strong> avec le compte professionnel
+          de l'utilisateur, puis vérification que toutes les applications sont à jour
+          (Outlook, Teams, Word, Excel, PowerPoint, OneDrive).
+        </p>
+
+        <h3>Étape 5 — Installation des applications métier</h3>
+        <p>
+          L'attribution des logiciels métier passe par <strong>Microsoft Azure (Entra ID)</strong>&nbsp;:
+          j'ajoute l'utilisateur au groupe correspondant à son profil (par exemple, un
+          architecte sera ajouté au groupe donnant droit à <strong>AutoCAD</strong> et
+          <strong>Revit</strong>). Cette appartenance déclenche l'attribution automatique
+          de la licence, et l'utilisateur peut alors télécharger ses applications depuis
+          le <strong>Portail Entreprise</strong> sur le poste.
+        </p>
+        <figure>
+          <img src="../assets/screenshots/sp1-groupe-azure.png" alt="Groupe Azure dédié AutoCAD">
+          <figcaption>Figure 1 — Exemple d'un groupe Azure dédié à l'attribution de licence AutoCAD.</figcaption>
+        </figure>
+        <figure>
+          <img src="../assets/screenshots/sp1-ajout-membres.png" alt="Ajout d'un membre au groupe Azure">
+          <figcaption>Figure 2 — Ajout d'un utilisateur au groupe pour déclencher l'attribution de licence.</figcaption>
+        </figure>
+
+        <h3>Étape 6 — Mappage des lecteurs réseau</h3>
+        <p>
+          Dernière étape avant livraison&nbsp;: l'ajout des lecteurs réseau en fonction de
+          l'entité d'appartenance de l'utilisateur — par exemple <code>DRTO</code>,
+          <code>DUMEZ Côte d'Azur</code>, <code>Vinci Construction Monaco</code>… Ces
+          lecteurs donnent accès aux ressources partagées propres à chaque filiale.
+        </p>
+
+        <h2 id="conclusion">Conclusion</h2>
+        <p>
+          La procédure aboutit à la livraison d'un poste opérationnel, intégré au domaine,
+          conforme aux politiques de sécurité et adapté aux besoins métier de l'utilisateur.
+          La standardisation de la procédure (AutoPilot, image UNITY, groupes Azure)
+          permet un déploiement fiable et reproductible, tout en laissant la marge de
+          personnalisation nécessaire pour chaque profil.
+        </p>
+
+        <h2 id="competences">Compétences validées</h2>
+        <p>Cette situation professionnelle valide les compétences suivantes&nbsp;:</p>
+
+        <div class="cards" style="margin-top: 1.5rem;">
+          <a href="../competences/c-gerer-patrimoine.html" class="card">
+            <span class="num">E4 · 01</span>
+            <h3>Gérer le patrimoine informatique</h3>
+            <p>Recensement, configuration et raccordement du poste aux ressources de la filiale.</p>
+            <span class="arrow">Voir la compétence →</span>
+          </a>
+          <a href="../competences/c-mettre-disposition.html" class="card">
+            <span class="num">E4 · 03</span>
+            <h3>Mettre à disposition des utilisateurs un service informatique</h3>
+            <p>Déploiement du poste prêt à l'emploi et accompagnement de l'utilisateur.</p>
+            <span class="arrow">Voir la compétence →</span>
+          </a>
+          <a href="../competences/c-installer-deployer.html" class="card">
+            <span class="num">E5 · 02</span>
+            <h3>Installer, tester et déployer une solution d'infrastructure réseau</h3>
+            <p>Installation et configuration d'un élément d'infrastructure (poste utilisateur).</p>
+            <span class="arrow">Voir la compétence →</span>
+          </a>
+        </div>
+
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <span class="mono">© 2025 — Poupard Evan · Portfolio BTS SIO 1</span>
+      <div class="footer-links">
+        <a href="mailto:evan.pprd@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/evan-poupard" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const list = document.querySelector('.nav-list');
+    toggle?.addEventListener('click', () => {
+      const open = list.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+  </script>
+</body>
+</html>

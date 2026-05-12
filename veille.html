@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veille technologique — Portfolio Poupard Evan</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='40' fill='%230aa5c2'/%3E%3C/svg%3E">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="nav-brand"><span class="dot"></span>POUPARD EVAN / SIO·SISR</a>
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">MENU</button>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="entreprise.html">Entreprise</a></li>
+          <li><a href="cv.html">CV</a></li>
+          <li><a href="competences.html">Compétences</a></li>
+          <li><a href="situations.html">Situations Pro</a></li>
+          <li><a href="realisations.html">Réalisations</a></li>
+          <li><a href="veille.html" aria-current="page">Veille</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container page-head">
+      <span class="mono">// 06 — Veille technologique</span>
+      <h1>Ma veille technologique</h1>
+      <p class="lead">
+        La veille technologique consiste à surveiller activement l'évolution des
+        technologies, des outils et des menaces dans son domaine professionnel,
+        afin d'anticiper les besoins de son entreprise et de maintenir ses
+        compétences à jour. C'est une démarche continue, structurée et documentée.
+      </p>
+    </section>
+
+    <section class="container">
+      <div class="veille-meta">
+        <div class="item">
+          <span class="mono">Méthode</span>
+          <p style="font-size: 0.95rem;">Lecture quotidienne d'avis CERT-FR, abonnements RSS aux blogs éditeurs
+          (Fortinet, Microsoft) et suivi de comptes spécialisés.</p>
+        </div>
+        <div class="item">
+          <span class="mono">Sources principales</span>
+          <p style="font-size: 0.95rem;">
+            <a href="https://www.cert.ssi.gouv.fr/feed/" target="_blank" rel="noopener">CERT-FR</a> ·
+            <a href="https://cyber.gouv.fr/actualites/feed" target="_blank" rel="noopener">ANSSI</a> ·
+            <a href="https://www.fortinet.com/blog/threat-research/rss.xml" target="_blank" rel="noopener">Fortinet</a> ·
+            <a href="https://www.microsoft.com/security/blog/feed/" target="_blank" rel="noopener">Microsoft Security</a> ·
+            <a href="https://www.lemondeinformatique.fr/flux-rss-thematiques.html" target="_blank" rel="noopener">Le Monde Informatique</a>
+          </p>
+        </div>
+      </div>
+
+      <!-- Planning visuel hebdomadaire -->
+      <div class="weekly-planning">
+        <div class="planning-head">
+          <span class="mono">Planning hebdomadaire</span>
+          <h3>Mes créneaux de veille</h3>
+        </div>
+        <div class="planning-grid">
+          <div class="planning-day">
+            <span class="day-label">Lun</span>
+            <span class="day-slot empty">—</span>
+          </div>
+          <div class="planning-day">
+            <span class="day-label">Mar</span>
+            <span class="day-slot active">
+              <span class="slot-time">08:00 — 08:30</span>
+              <span class="slot-tag">Cybersécurité</span>
+            </span>
+          </div>
+          <div class="planning-day">
+            <span class="day-label">Mer</span>
+            <span class="day-slot empty">—</span>
+          </div>
+          <div class="planning-day">
+            <span class="day-label">Jeu</span>
+            <span class="day-slot active red">
+              <span class="slot-time">12:30 — 13:00</span>
+              <span class="slot-tag">Réseau &amp; Infra</span>
+            </span>
+          </div>
+          <div class="planning-day">
+            <span class="day-label">Ven</span>
+            <span class="day-slot empty">—</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="theme-block">
+        <h2><span class="num">01</span> Cybersécurité</h2>
+        <p>
+          Suivi des vulnérabilités critiques et des techniques d'attaque touchant
+          les équipements et services utilisés au quotidien dans l'agence.
+        </p>
+        <div class="cards" style="margin-top: 1.5rem;">
+          <a href="veille/v1-fortinet.html" class="card">
+            <span class="num">VEILLE 01</span>
+            <h3>Suivi des vulnérabilités Fortinet</h3>
+            <p>Veille sur les CVE FortiOS, FortiGate et FortiWifi, et bonnes pratiques de durcissement appliquées aux chantiers.</p>
+            <span class="arrow">Lire l'analyse →</span>
+          </a>
+          <a href="veille/v2-phishing.html" class="card">
+            <span class="num">VEILLE 02</span>
+            <h3>Phishing &amp; sensibilisation des utilisateurs</h3>
+            <p>Évolution des techniques d'hameçonnage et moyens de défense techniques et humains à l'échelle de l'agence.</p>
+            <span class="arrow">Lire l'analyse →</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="theme-block">
+        <h2><span class="num">02</span> Réseau &amp; infrastructure</h2>
+        <p>
+          Évolution des solutions de connectivité pour les sites distants, en lien
+          direct avec mes missions d'ouverture de chantiers.
+        </p>
+        <div class="cards" style="margin-top: 1.5rem;">
+          <a href="veille/v3-5g-chantier.html" class="card">
+            <span class="num">VEILLE 03</span>
+            <h3>La 5G fixe comme connectivité de site distant</h3>
+            <p>Étude de la 5G en accès fixe (FWA) comme évolution possible de la solution 4G de secours actuellement déployée sur les chantiers.</p>
+            <span class="arrow">Lire l'analyse →</span>
+          </a>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <span class="mono">© 2025 — Poupard Evan · Portfolio BTS SIO 1</span>
+      <div class="footer-links">
+        <a href="mailto:evan.pprd@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/evan-poupard" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const list = document.querySelector('.nav-list');
+    toggle?.addEventListener('click', () => {
+      const open = list.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+  </script>
+</body>
+</html>

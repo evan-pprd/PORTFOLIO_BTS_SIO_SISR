@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ouverture d'un nouveau chantier — Portfolio Poupard Evan</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='40' fill='%2360C6EC'/%3E%3C/svg%3E">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="../index.html" class="nav-brand"><span class="dot"></span>POUPARD EVAN / SIO·SISR</a>
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">MENU</button>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="../entreprise.html">Entreprise</a></li>
+          <li><a href="../cv.html">CV</a></li>
+          <li><a href="../competences.html">Compétences</a></li>
+          <li><a href="../situations.html" aria-current="page">Situations Pro</a></li>
+          <li><a href="../realisations.html">Réalisations</a></li>
+          <li><a href="../veille.html">Veille</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container page-head">
+      <a href="../situations.html" class="mono" style="text-decoration: none;">← Retour aux situations</a>
+      <span class="mono" style="display:block; margin-top: 1.5rem;">// SITUATION PROFESSIONNELLE 02</span>
+      <h1>Ouverture d'un nouveau chantier&nbsp;: SharePoint &amp; réseau</h1>
+    </section>
+
+    <section class="container detail">
+
+      <aside class="detail-aside">
+        <span class="label">Sommaire</span>
+        <ul>
+          <li><a href="#contexte">Contexte</a></li>
+          <li><a href="#sharepoint">Création du SharePoint</a></li>
+          <li><a href="#reseau">Préparation du réseau</a></li>
+          <li><a href="#installation">Installation sur site</a></li>
+          <li><a href="#peripheriques">Périphériques sur site</a></li>
+          <li><a href="#conclusion">Conclusion</a></li>
+          <li><a href="#competences">Compétences validées</a></li>
+        </ul>
+      </aside>
+
+      <article class="detail-body">
+
+        <h2 id="contexte">Contexte</h2>
+        <p>
+          L'ouverture d'un nouveau chantier déclenche, côté service informatique, une
+          chaîne d'actions complète&nbsp;: création de l'espace collaboratif des équipes
+          et mise en place de la solution réseau sur site. L'objectif est d'arriver sur
+          le chantier avec un kit prêt à brancher, déjà testé en agence, pour minimiser
+          le temps d'intervention sur place et garantir la continuité de service dès
+          le premier jour d'activité.
+        </p>
+
+        <h2 id="sharepoint">Étape 1 — Création de l'espace SharePoint</h2>
+        <p>
+          Chaque nouveau chantier dispose d'un espace SharePoint dédié, créé à partir
+          d'un <strong>template préétabli</strong> qui définit&nbsp;:
+        </p>
+        <ul>
+          <li>l'arborescence des dossiers (études, exécution, finance, RH, qualité, etc.) ;</li>
+          <li>les groupes d'utilisateurs (conducteurs de travaux, assistantes, encadrement…) ;</li>
+          <li>la matrice de permissions par groupe et par dossier.</li>
+        </ul>
+        <p>
+          La sécurité est assurée par un cloisonnement strict des accès&nbsp;: par exemple,
+          le groupe <strong>Assistantes</strong> n'a aucun droit sur le dossier
+          <code>FINANCE</code>. Le template garantit la cohérence et la conformité de
+          chaque nouveau site avec la politique de gestion documentaire du groupe.
+        </p>
+        <figure>
+          <img src="../assets/screenshots/sp2-sharepoint.png" alt="Autorisations des groupes SharePoint">
+          <figcaption>Figure 1 — Groupes SharePoint et niveaux d'autorisation pour un chantier (exemple Maison des Oliviers).</figcaption>
+        </figure>
+
+        <h2 id="reseau">Étape 2 — Préparation du matériel réseau</h2>
+        <p>
+          Le dimensionnement du kit réseau dépend de la taille du chantier. Pour un
+          <strong>petit chantier (5 à 10 personnes)</strong>, la solution déployée se
+          compose de&nbsp;:
+        </p>
+        <ul>
+          <li>un <strong>FortiWifi</strong> (point d'accès Wi-Fi sécurisé géré centralement) ;</li>
+          <li>un <strong>routeur 4G</strong> de secours.</li>
+        </ul>
+
+        <h3>FortiWifi&nbsp;: déclaration de l'équipement</h3>
+        <p>
+          Le déploiement de la configuration sur le FortiWifi est pris en charge par
+          l'équipe des ingénieurs réseaux à partir d'un template centralisé. De mon côté,
+          je renseigne un <strong>formulaire d'enrôlement</strong> avec les informations
+          de l'équipement&nbsp;:
+        </p>
+        <ul>
+          <li>numéro de série (<code>SN</code>) ;</li>
+          <li>Cloud Key ;</li>
+          <li>modèle et type d'équipement.</li>
+        </ul>
+
+        <h3>Routeur 4G&nbsp;: configuration manuelle</h3>
+        <p>
+          Je me connecte à l'interface web du routeur et procède aux réglages suivants&nbsp;:
+        </p>
+        <ul>
+          <li>définition du <strong>nom du réseau Wi-Fi</strong> et de son mot de passe — ce
+              dernier est volontairement réservé aux techniciens et administrateurs réseau,
+              le routeur 4G servant uniquement de <em>secours</em> en cas de défaillance du
+              Wi-Fi déployé par le FortiWifi ;</li>
+          <li>changement du <strong>code PIN</strong> par défaut et activation du
+              <strong>déverrouillage automatique au redémarrage</strong>, pour éviter
+              qu'une coupure de courant ne rende le routeur inaccessible à distance.</li>
+        </ul>
+
+        <h3>Test en zone blanche</h3>
+        <p>
+          Avant départ sur le chantier, l'ensemble est testé dans une <strong>zone blanche</strong>
+          du bâtiment (zone non couverte par le Wi-Fi d'agence). Ce test grandeur nature
+          permet de valider à la fois la connectivité, la couverture et le basculement
+          vers la 4G en cas de besoin.
+        </p>
+
+        <h2 id="installation">Étape 3 — Installation sur le chantier</h2>
+        <p>
+          Une fois la solution validée en agence, je me rends sur le chantier pour
+          procéder à l'installation physique des équipements&nbsp;: alimentation,
+          positionnement du point d'accès, raccordement du routeur 4G au FortiWifi,
+          vérification finale de la connectivité depuis un poste.
+        </p>
+        <figure>
+          <img src="../assets/screenshots/sp2-baie-chantier.jpg" alt="Baie de brassage installée sur un chantier">
+          <figcaption>Figure 2 — Exemple d'une baie de brassage déployée sur chantier (FortiWifi, FortiGate, switch et bandeau de brassage).</figcaption>
+        </figure>
+
+        <h2 id="peripheriques">Étape 4 — Intégration des imprimantes &amp; traceurs</h2>
+        <p>
+          Lorsque le chantier dispose déjà d'imprimantes ou de traceurs, leur intégration
+          au réseau suit une procédure spécifique&nbsp;:
+        </p>
+        <ol>
+          <li>Raccordement <strong>filaire</strong> du périphérique sur le switch ou
+              directement sur le FortiWifi ;</li>
+          <li>Changement du <strong>VLAN</strong> du port utilisé pour basculer
+              l'équipement sur le VLAN dédié aux périphériques d'impression ;</li>
+          <li>Première connexion en <strong>DHCP</strong> pour vérifier que le réseau
+              accepte bien le périphérique ;</li>
+          <li>Attribution d'une <strong>adresse IP fixe</strong> préalablement réservée
+              dans le plan d'adressage ;</li>
+          <li>Pour les modèles disposant de la fonction <em>scan to mail</em>, demande
+              d'<strong>autorisation de l'IP</strong> sur le serveur SMTP de Vinci afin
+              que l'équipement puisse envoyer des courriels.</li>
+        </ol>
+
+        <h2 id="conclusion">Conclusion</h2>
+        <p>
+          Cette procédure couvre la chaîne complète d'ouverture d'un chantier&nbsp;:
+          provisionnement de l'espace collaboratif, préparation et test de la
+          connectivité, installation sur site et intégration des périphériques. Elle
+          m'a permis de monter en compétence sur l'ensemble des composants d'une
+          infrastructure réseau réelle (Wi-Fi, VLAN, DHCP, IP fixe, pare-feu, SMTP) et
+          de comprendre concrètement les contraintes d'une exploitation multi-sites.
+        </p>
+
+        <h2 id="competences">Compétences validées</h2>
+        <p>Cette situation professionnelle valide les compétences suivantes&nbsp;:</p>
+
+        <div class="cards" style="margin-top: 1.5rem;">
+          <a href="../competences/c-gerer-patrimoine.html" class="card">
+            <span class="num">E4 · 01</span>
+            <h3>Gérer le patrimoine informatique</h3>
+            <p>Recensement et configuration des équipements réseau du chantier, gestion des habilitations SharePoint.</p>
+            <span class="arrow">Voir la compétence →</span>
+          </a>
+          <a href="../competences/c-mode-projet.html" class="card">
+            <span class="num">E4 · 04</span>
+            <h3>Travailler en mode projet</h3>
+            <p>Préparation, test et déploiement coordonnés à la date d'ouverture du chantier.</p>
+            <span class="arrow">Voir la compétence →</span>
+          </a>
+          <a href="../competences/c-mettre-disposition.html" class="card">
+            <span class="num">E4 · 03</span>
+            <h3>Mettre à disposition des utilisateurs un service informatique</h3>
+            <p>Tests d'intégration en zone blanche, déploiement de la solution réseau et accompagnement sur site.</p>
+            <span class="arrow">Voir la compétence →</span>
+          </a>
+          <a href="../competences/c-concevoir-infra.html" class="card">
+            <span class="num">E5 · 01</span>
+            <h3>Concevoir une solution d'infrastructure réseau</h3>
+            <p>Dimensionnement de la solution réseau en fonction de la taille du chantier (FortiWifi + routeur 4G).</p>
+            <span class="arrow">Voir la compétence →</span>
+          </a>
+          <a href="../competences/c-installer-deployer.html" class="card">
+            <span class="num">E5 · 02</span>
+            <h3>Installer, tester et déployer une solution d'infrastructure réseau</h3>
+            <p>Préparation des équipements, test en zone blanche, installation sur site et intégration des périphériques.</p>
+            <span class="arrow">Voir la compétence →</span>
+          </a>
+        </div>
+
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <span class="mono">© 2025 — Poupard Evan · Portfolio BTS SIO 1</span>
+      <div class="footer-links">
+        <a href="mailto:evan.pprd@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/evan-poupard" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const list = document.querySelector('.nav-list');
+    toggle?.addEventListener('click', () => {
+      const open = list.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+  </script>
+</body>
+</html>

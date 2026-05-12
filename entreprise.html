@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entreprise — Portfolio Poupard Evan</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='40' fill='%230aa5c2'/%3E%3C/svg%3E">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="nav-brand"><span class="dot"></span>POUPARD EVAN / SIO·SISR</a>
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">MENU</button>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="entreprise.html" aria-current="page">Entreprise</a></li>
+          <li><a href="cv.html">CV</a></li>
+          <li><a href="competences.html">Compétences</a></li>
+          <li><a href="situations.html">Situations Pro</a></li>
+          <li><a href="realisations.html">Réalisations</a></li>
+          <li><a href="veille.html">Veille</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container page-head">
+      <span class="mono">// 01 — Entreprise d'accueil</span>
+      <h1>Vinci Construction</h1>
+      <p class="lead">Mon entreprise d'alternance, où j'occupe un poste de technicien informatique au sein du service IT.</p>
+    </section>
+
+    <section class="container">
+      <div class="brand-banner">
+        <div class="brand-card brand-card--lg">
+          <img src="assets/img/logo-vinci.png" alt="Logo Vinci Construction">
+        </div>
+      </div>
+    </section>
+
+    <section class="container two-col">
+      <div>
+        <div class="info-block">
+          <span class="mono">À propos</span>
+          <h3>Présentation de l'entreprise</h3>
+          <p>
+            Vinci Construction France est la filiale française du groupe Vinci, l'un des
+            principaux acteurs mondiaux de la construction. L'entreprise conçoit, finance,
+            réalise et entretient tout type de projet dans les domaines du bâtiment, du
+            génie civil, des travaux routiers et des réseaux.
+          </p>
+        </div>
+
+        <div class="info-block info-block-red">
+          <span class="mono">Implantation</span>
+          <h3>Site &amp; service IT</h3>
+          <p>
+            J'effectue mon alternance à l'<strong>agence du Mercantour</strong>, à <strong>Nice</strong>,
+            qui regroupe entre <strong>100 et 200 collaborateurs</strong>. Le service informatique
+            assure le support des utilisateurs de l'agence ainsi que le suivi à distance des
+            chantiers, dépôts et agences.
+          </p>
+        </div>
+      </div>
+
+      <div>
+        <div class="info-block">
+          <span class="mono">Mission</span>
+          <h3>Mon poste de technicien informatique</h3>
+          <p>
+            En tant qu'alternant technicien informatique, j'interviens en soutien
+            de l'équipe IT sur l'ensemble du périmètre de l'agence :
+          </p>
+          <ul style="margin: 0.8rem 0 0 1.4rem;">
+            <li>traitement des tickets de support utilisateur ;</li>
+            <li>préparation et déploiement des équipements (PC, routeurs, switchs, bornes Wi-Fi, pare-feux) ;</li>
+            <li>suivi à distance ou sur site (chantiers, dépôts, agences) des besoins et incidents ;</li>
+            <li>maintenance courante du parc et de l'infrastructure réseau.</li>
+          </ul>
+        </div>
+
+        <div class="info-block info-block-red">
+          <span class="mono">Encadrement</span>
+          <h3>Tutorat &amp; alternance</h3>
+          <p>
+            <strong>Rythme d'alternance :</strong> 3 jours en entreprise, 2 jours en formation.<br>
+            <strong>Tuteur entreprise :</strong> François Pons, Responsable Informatique.<br>
+            <strong>Référent pédagogique :</strong> Lucas Chapel, formateur à UFITECH.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <span class="mono">© 2025 — Poupard Evan · Portfolio BTS SIO 1</span>
+      <div class="footer-links">
+        <a href="mailto:evan.pprd@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/evan-poupard" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const list = document.querySelector('.nav-list');
+    toggle?.addEventListener('click', () => {
+      const open = list.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+  </script>
+</body>
+</html>

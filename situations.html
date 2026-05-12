@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Situations professionnelles — Portfolio Poupard Evan</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='40' fill='%230aa5c2'/%3E%3C/svg%3E">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="nav-brand"><span class="dot"></span>POUPARD EVAN / SIO·SISR</a>
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">MENU</button>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="entreprise.html">Entreprise</a></li>
+          <li><a href="cv.html">CV</a></li>
+          <li><a href="competences.html">Compétences</a></li>
+          <li><a href="situations.html" aria-current="page">Situations Pro</a></li>
+          <li><a href="realisations.html">Réalisations</a></li>
+          <li><a href="veille.html">Veille</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container page-head">
+      <span class="mono">// 04 — Missions en entreprise</span>
+      <h1>Situations professionnelles</h1>
+      <p class="lead">
+        Vue d'ensemble des missions techniques réalisées chez Vinci Construction.
+        Chaque situation détaille le contexte, le déroulé technique et les
+        compétences validées.
+      </p>
+    </section>
+
+    <section class="container">
+      <div class="cards">
+
+        <a href="situations/sp1-deploiement-poste-hp.html" class="card">
+          <span class="num">SITUATION 01</span>
+          <h3>Préparation et déploiement d'un poste utilisateur</h3>
+          <p>Mise en service complète d'un poste HP via AutoPilot, attribution des licences et applications métier, raccordement aux ressources de la filiale.</p>
+          <span class="arrow">Lire la situation →</span>
+        </a>
+
+        <a href="situations/sp2-ouverture-chantier.html" class="card">
+          <span class="num">SITUATION 02</span>
+          <h3>Ouverture d'un nouveau chantier</h3>
+          <p>Création de l'espace SharePoint, préparation et test de la solution réseau (FortiWifi + 4G), installation sur site et intégration des périphériques.</p>
+          <span class="arrow">Lire la situation →</span>
+        </a>
+
+        <a href="situations/sp3-traitement-tickets.html" class="card">
+          <span class="num">SITUATION 03</span>
+          <h3>Traitement des tickets de support</h3>
+          <p>Prise en charge des demandes d'assistance sur les secteurs Bâtiment et Génie Civil&nbsp;: diagnostic, résolution à distance et documentation.</p>
+          <span class="arrow">Lire la situation →</span>
+        </a>
+
+        <a href="situations/sp4-procedure-o365-mobile.html" class="card">
+          <span class="num">SITUATION 04</span>
+          <h3>Procédure de dépannage M365 sur mobile</h3>
+          <p>Rédaction de deux procédures (iOS et Android) pour permettre aux utilisateurs de résoudre eux-mêmes la majorité des problèmes d'accès aux applications Microsoft 365.</p>
+          <span class="arrow">Lire la situation →</span>
+        </a>
+
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <span class="mono">© 2025 — Poupard Evan · Portfolio BTS SIO 1</span>
+      <div class="footer-links">
+        <a href="mailto:evan.pprd@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/evan-poupard" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const list = document.querySelector('.nav-list');
+    toggle?.addEventListener('click', () => {
+      const open = list.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+  </script>
+</body>
+</html>
