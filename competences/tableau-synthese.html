@@ -10,15 +10,30 @@
     .synthese {
       margin: 1.5rem 0 2rem;
       overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
       border: 1px solid var(--line);
       border-radius: var(--radius);
       background: var(--surface);
+      position: relative;
+      background-image:
+        linear-gradient(to right, transparent 92%, rgba(0, 26, 58, 0.5) 100%);
+      background-attachment: local;
     }
     .synthese table {
       width: 100%;
-      min-width: 820px;
+      min-width: 720px;
       border-collapse: collapse;
       font-size: 0.88rem;
+    }
+    .scroll-hint {
+      display: none;
+      font-size: 0.78rem; color: var(--ink-mute);
+      margin: 0.8rem 0 0.4rem;
+    }
+    @media (max-width: 760px) {
+      .scroll-hint { display: block; }
+      .synthese table { min-width: 640px; font-size: 0.82rem; }
+      .synthese th, .synthese td { padding: 0.55rem 0.6rem; }
     }
     .synthese th, .synthese td {
       padding: 0.7rem 0.8rem;
@@ -97,6 +112,8 @@
     </section>
 
     <section class="container" style="padding-bottom: clamp(2rem, 5vw, 3.5rem);">
+
+      <p class="scroll-hint">↔ Faites défiler horizontalement pour voir toutes les colonnes.</p>
 
       <div class="synthese">
         <table>
