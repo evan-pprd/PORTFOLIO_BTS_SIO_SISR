@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Remplacement d'un poste utilisateur — Portfolio Poupard Evan</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='40' fill='%2360C6EC'/%3E%3C/svg%3E">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="../index.html" class="nav-brand"><span class="dot"></span>POUPARD EVAN / SIO·SISR</a>
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">MENU</button>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="../entreprise.html">Entreprise</a></li>
+          <li><a href="../cv.html">CV</a></li>
+          <li><a href="../competences.html">Compétences</a></li>
+          <li><a href="../situations.html" aria-current="page">Situations Pro</a></li>
+          <li><a href="../realisations.html">Réalisations</a></li>
+          <li><a href="../veille.html">Veille</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container page-head">
+      <a href="../situations.html" class="mono" style="text-decoration: none;">← Retour aux situations</a>
+      <span class="mono" style="display:block; margin-top: 1.5rem;">// SITUATION PROFESSIONNELLE 07</span>
+      <h1>Remplacement d'un poste utilisateur hors service</h1>
+    </section>
+
+    <section class="container detail">
+
+      <aside class="detail-aside">
+        <span class="label">Sommaire</span>
+        <ul>
+          <li><a href="#contexte">Contexte</a></li>
+          <li><a href="#diagnostic">Diagnostic</a></li>
+          <li><a href="#remplacement">Préparation du remplacement</a></li>
+          <li><a href="#livraison">Livraison et reprise des données</a></li>
+          <li><a href="#retour">Retour du matériel défaillant</a></li>
+          <li><a href="#conclusion">Conclusion</a></li>
+          <li><a href="#competences">Compétences validées</a></li>
+        </ul>
+      </aside>
+
+      <article class="detail-body">
+
+        <h2 id="contexte">Contexte</h2>
+        <p>
+          Un collaborateur de l'agence du Mercantour signale un
+          <strong>dysfonctionnement bloquant</strong> de son poste de travail
+          (ne démarre plus, impossible d'accéder à sa session). L'activité du
+          collaborateur étant arrêtée, la demande est traitée en
+          <strong>priorité haute</strong> par le service informatique.
+        </p>
+        <p>
+          Le ticket m'est attribué&nbsp;: diagnostic, mise à disposition d'un
+          poste de remplacement, reprise des données et récupération du matériel
+          défaillant.
+        </p>
+
+        <h2 id="diagnostic">Diagnostic</h2>
+        <p>
+          Prise en charge de l'incident selon la procédure standard de
+          traitement des tickets (voir
+          <a href="sp3-traitement-tickets.html">SP03</a>)&nbsp;:
+        </p>
+        <ul>
+          <li>qualification à distance via échanges avec l'utilisateur
+              puis prise de main à distance quand c'est possible&nbsp;;</li>
+          <li>vérification des éléments de base (alimentation, écran,
+              voyants, signaux sonores au démarrage)&nbsp;;</li>
+          <li>tentative de démarrage en mode sans échec, consultation des
+              journaux d'événements si accessible&nbsp;;</li>
+          <li>constat&nbsp;: le poste ne redémarre plus correctement malgré
+              les tentatives de dépannage logiciel. Un remplacement est
+              décidé pour ne pas bloquer davantage l'utilisateur.</li>
+        </ul>
+
+        <h2 id="remplacement">Préparation du remplacement</h2>
+        <p>
+          Un poste de remplacement est préparé selon la procédure de
+          déploiement standard (voir
+          <a href="sp1-deploiement-poste-hp.html">SP01</a>)&nbsp;:
+        </p>
+        <ul>
+          <li>enrôlement <strong>AutoPilot</strong> sur le profil
+              utilisateur concerné&nbsp;;</li>
+          <li>application automatique des stratégies de l'agence et
+              des licences M365 déjà attribuées au compte&nbsp;;</li>
+          <li>installation des applications métier spécifiques au périmètre
+              du collaborateur.</li>
+        </ul>
+        <p>
+          Le poste est testé, documenté et prêt à être mis en service dans
+          des délais compatibles avec la reprise d'activité.
+        </p>
+
+        <h2 id="livraison">Livraison et reprise des données</h2>
+        <p>
+          Lors de la remise du poste&nbsp;:
+        </p>
+        <ul>
+          <li>première connexion assistée du collaborateur&nbsp;;</li>
+          <li>vérification que les données personnelles de l'utilisateur,
+              synchronisées en permanence via <strong>OneDrive</strong>, sont
+              bien restaurées sur le nouveau poste&nbsp;;</li>
+          <li>contrôle des favoris et des accès aux ressources métier&nbsp;;</li>
+          <li>test fonctionnel de la messagerie, de Teams et des partages
+              SharePoint attendus.</li>
+        </ul>
+
+        <h2 id="retour">Retour du matériel défaillant</h2>
+        <p>
+          Le poste hors service est récupéré pour traitement&nbsp;:
+          <strong>mise à jour de l'inventaire</strong> (statut « en panne »,
+          sortie du parc actif), envoi au prestataire pour tentative de
+          réparation ou mise au rebut en filière DEEE selon diagnostic.
+          Le compte utilisateur reste inchangé&nbsp;: aucun impact côté
+          identité ni licence, seul le terminal change.
+        </p>
+
+        <h2 id="conclusion">Conclusion</h2>
+        <p>
+          L'utilisateur a pu reprendre son activité le jour même sans perte
+          de données grâce à la synchronisation OneDrive déjà en place. Cette
+          mission illustre la force d'une infrastructure <strong>industrialisée</strong>&nbsp;:
+          AutoPilot et sauvegarde cloud permettent de rendre le matériel
+          « interchangeable » et de limiter l'impact d'une panne matérielle
+          sur l'activité métier.
+        </p>
+
+        <h2 id="competences">Compétences validées</h2>
+        <p>Cette situation professionnelle valide les compétences suivantes&nbsp;:</p>
+
+        <div class="cards" style="margin-top: 1.5rem;">
+          <a href="../competences/c-gerer-patrimoine.html" class="card">
+            <span class="num">E4 · 01</span>
+            <h3>Gérer le patrimoine informatique</h3>
+            <p>Mise à jour de l'inventaire, sortie du parc actif, suivi du cycle de vie du matériel.</p>
+            <span class="arrow">Voir la compétence →</span>
+          </a>
+          <a href="../competences/c-repondre-incidents.html" class="card">
+            <span class="num">E4 · 02</span>
+            <h3>Répondre aux incidents et aux demandes d'assistance et d'évolution</h3>
+            <p>Prise en charge d'un incident bloquant, diagnostic et décision de remplacement.</p>
+            <span class="arrow">Voir la compétence →</span>
+          </a>
+          <a href="../competences/c-mettre-disposition.html" class="card">
+            <span class="num">E4 · 03</span>
+            <h3>Mettre à disposition des utilisateurs un service informatique</h3>
+            <p>Remise du poste de remplacement, assistance à la reprise de l'activité et à la restauration des données.</p>
+            <span class="arrow">Voir la compétence →</span>
+          </a>
+          <a href="../competences/c-exploiter-depanner.html" class="card">
+            <span class="num">E5 · 03</span>
+            <h3>Exploiter, dépanner et superviser une solution d'infrastructure réseau</h3>
+            <p>Dépannage d'un élément d'infrastructure défaillant et maintien de la qualité de service.</p>
+            <span class="arrow">Voir la compétence →</span>
+          </a>
+        </div>
+
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <span class="mono">© 2025 — Poupard Evan · Portfolio BTS SIO 1</span>
+      <div class="footer-links">
+        <a href="mailto:evan.pprd@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/evan-poupard" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const list = document.querySelector('.nav-list');
+    toggle?.addEventListener('click', () => {
+      const open = list.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+  </script>
+</body>
+</html>

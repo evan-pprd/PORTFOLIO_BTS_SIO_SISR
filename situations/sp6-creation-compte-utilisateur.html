@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Création d'un compte utilisateur complet — Portfolio Poupard Evan</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='40' fill='%2360C6EC'/%3E%3C/svg%3E">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="../index.html" class="nav-brand"><span class="dot"></span>POUPARD EVAN / SIO·SISR</a>
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">MENU</button>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="../entreprise.html">Entreprise</a></li>
+          <li><a href="../cv.html">CV</a></li>
+          <li><a href="../competences.html">Compétences</a></li>
+          <li><a href="../situations.html" aria-current="page">Situations Pro</a></li>
+          <li><a href="../realisations.html">Réalisations</a></li>
+          <li><a href="../veille.html">Veille</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container page-head">
+      <a href="../situations.html" class="mono" style="text-decoration: none;">← Retour aux situations</a>
+      <span class="mono" style="display:block; margin-top: 1.5rem;">// SITUATION PROFESSIONNELLE 06</span>
+      <h1>Création d'un compte utilisateur complet</h1>
+    </section>
+
+    <section class="container detail">
+
+      <aside class="detail-aside">
+        <span class="label">Sommaire</span>
+        <ul>
+          <li><a href="#contexte">Contexte</a></li>
+          <li><a href="#deroule">Déroulé technique</a></li>
+          <li><a href="#livraison">Livraison à l'utilisateur</a></li>
+          <li><a href="#conclusion">Conclusion</a></li>
+          <li><a href="#competences">Compétences validées</a></li>
+        </ul>
+      </aside>
+
+      <article class="detail-body">
+
+        <h2 id="contexte">Contexte</h2>
+        <p>
+          L'arrivée d'un nouveau collaborateur au sein de l'agence du Mercantour
+          déclenche, côté service informatique, une chaîne d'actions destinée à
+          lui fournir un environnement de travail <strong>opérationnel dès son
+          premier jour</strong>&nbsp;: compte d'identité, licences, matériel,
+          accès aux ressources métier.
+        </p>
+        <p>
+          J'ai été chargé de prendre en charge la création complète du compte
+          d'un nouveau collaborateur. L'enjeu est triple&nbsp;: garantir la
+          cohérence du référentiel, respecter les bons niveaux d'habilitation,
+          et livrer un poste utilisable sans intervention complémentaire.
+        </p>
+
+        <h2 id="deroule">Déroulé technique</h2>
+
+        <h3>Étape 1 — Collecte du besoin</h3>
+        <p>
+          Réception de la demande de création de compte via le
+          <strong>portail de demandes</strong> interne, précisant&nbsp;:
+          nom et prénom du collaborateur, filiale d'appartenance, métier,
+          responsable hiérarchique et date d'arrivée. Ces informations
+          déterminent les groupes d'appartenance et les licences à provisionner.
+        </p>
+
+        <h3>Étape 2 — Création du compte Active Directory</h3>
+        <p>
+          Création de l'utilisateur dans l'<strong>unité d'organisation</strong>
+          correspondant à sa filiale, selon la convention de nommage interne.
+          Le compte est placé dans les <strong>groupes AD</strong> associés
+          à son métier, ce qui déclenche automatiquement&nbsp;:
+        </p>
+        <ul>
+          <li>l'attribution des droits NTFS sur les partages fichiers&nbsp;;</li>
+          <li>la publication des imprimantes de son agence par GPO&nbsp;;</li>
+          <li>la synchronisation vers <strong>Entra ID</strong> (Azure AD).</li>
+        </ul>
+
+        <h3>Étape 3 — Attribution des licences Microsoft 365</h3>
+        <p>
+          Dans le centre d'administration M365, affectation du
+          <strong>pack de licences</strong> correspondant au profil du
+          collaborateur (messagerie Exchange, OneDrive, Teams, SharePoint,
+          applications Office, licence Windows si nécessaire). L'affectation
+          s'effectue par <strong>appartenance à un groupe de licence</strong>,
+          ce qui garantit la traçabilité et évite les oublis.
+        </p>
+
+        <h3>Étape 4 — Préparation du poste</h3>
+        <p>
+          Reprise de la procédure de préparation de poste
+          (<a href="sp1-deploiement-poste-hp.html">SP01</a>)&nbsp;: enrôlement
+          AutoPilot, application du profil Intune, installation des
+          applications métier spécifiques au périmètre du collaborateur.
+        </p>
+
+        <h3>Étape 5 — Vérifications finales</h3>
+        <p>
+          Avant la remise, test&nbsp;: connexion au compte, accès à la
+          messagerie Outlook, accès aux partages SharePoint attendus, test
+          d'impression sur l'imprimante de son agence. Chaque étape est
+          cochée pour garantir que rien ne manque à la prise de poste.
+        </p>
+
+        <h2 id="livraison">Livraison à l'utilisateur</h2>
+        <p>
+          Le jour de l'arrivée, remise en main propre du poste&nbsp;:
+          communication des <strong>identifiants</strong> par un canal
+          sécurisé, assistance à la <strong>première connexion</strong>,
+          activation de l'<strong>authentification multi-facteurs (MFA)</strong>
+          et courte présentation de l'environnement de travail.
+        </p>
+
+        <h2 id="conclusion">Conclusion</h2>
+        <p>
+          Le compte a été créé et livré dans le respect de la convention de
+          nommage et des niveaux d'habilitation attendus. Cette mission m'a
+          permis de pratiquer la gestion des identités sur l'ensemble de la
+          chaîne Active Directory → Entra ID → Microsoft 365, en mesurant
+          l'importance du respect du <strong>principe de moindre privilège</strong>
+          dans un parc à plusieurs milliers d'utilisateurs.
+        </p>
+
+        <h2 id="competences">Compétences validées</h2>
+        <p>Cette situation professionnelle valide les compétences suivantes&nbsp;:</p>
+
+        <div class="cards" style="margin-top: 1.5rem;">
+          <a href="../competences/c-gerer-patrimoine.html" class="card">
+            <span class="num">E4 · 01</span>
+            <h3>Gérer le patrimoine informatique</h3>
+            <p>Gestion des identités, des habilitations et des licences dans le respect du référentiel de l'entreprise.</p>
+            <span class="arrow">Voir la compétence →</span>
+          </a>
+          <a href="../competences/c-mettre-disposition.html" class="card">
+            <span class="num">E4 · 03</span>
+            <h3>Mettre à disposition des utilisateurs un service informatique</h3>
+            <p>Mise à disposition d'un environnement de travail complet, accompagnement à la première connexion.</p>
+            <span class="arrow">Voir la compétence →</span>
+          </a>
+        </div>
+
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <span class="mono">© 2025 — Poupard Evan · Portfolio BTS SIO 1</span>
+      <div class="footer-links">
+        <a href="mailto:evan.pprd@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/evan-poupard" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const list = document.querySelector('.nav-list');
+    toggle?.addEventListener('click', () => {
+      const open = list.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+  </script>
+</body>
+</html>
