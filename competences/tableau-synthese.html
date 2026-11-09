@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tableau de synthèse E5 — Portfolio Poupard Evan</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='40' fill='%2360C6EC'/%3E%3C/svg%3E">
+  <style>
+    .synthese {
+      margin: 1.5rem 0 2rem;
+      overflow-x: auto;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--surface);
+    }
+    .synthese table {
+      width: 100%;
+      min-width: 820px;
+      border-collapse: collapse;
+      font-size: 0.88rem;
+    }
+    .synthese th, .synthese td {
+      padding: 0.7rem 0.8rem;
+      text-align: left;
+      border-bottom: 1px solid var(--line);
+      vertical-align: top;
+    }
+    .synthese thead th {
+      background: rgba(255, 255, 255, 0.04);
+      color: var(--ink);
+      font-weight: 600;
+      font-size: 0.78rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      border-bottom: 2px solid var(--line-2);
+    }
+    .synthese thead th.c-code { text-align: center; width: 72px; }
+    .synthese td.c-code {
+      text-align: center; font-weight: 700; color: var(--cyan);
+      font-size: 0.78rem; letter-spacing: 0.1em;
+    }
+    .synthese td.c-period { color: var(--ink-mute); font-size: 0.82rem; white-space: nowrap; }
+    .synthese td.check { text-align: center; color: var(--cyan); font-weight: 700; }
+    .synthese tr.year-row td {
+      background: rgba(96, 198, 236, 0.08);
+      color: var(--cyan);
+      font-weight: 600;
+      font-size: 0.78rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.6rem 0.8rem;
+      border-top: 1px solid var(--line-2);
+    }
+    .synthese tr.year-row.red td { background: rgba(226, 0, 37, 0.08); color: var(--red); }
+    .synthese tbody tr:hover td:not(.c-code) { background: rgba(255, 255, 255, 0.03); }
+    .legend {
+      display: flex; flex-wrap: wrap; gap: 1.5rem;
+      margin-top: 1rem; font-size: 0.85rem; color: var(--ink-mute);
+    }
+    .legend .mark { color: var(--cyan); font-weight: 700; }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="../index.html" class="nav-brand"><span class="dot"></span>POUPARD EVAN / SIO·SISR</a>
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">MENU</button>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="../entreprise.html">Entreprise</a></li>
+          <li><a href="../cv.html">CV</a></li>
+          <li><a href="../competences.html" aria-current="page">Compétences</a></li>
+          <li><a href="../situations.html">Situations Pro</a></li>
+          <li><a href="../realisations.html">Réalisations</a></li>
+          <li><a href="../veille.html">Veille</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container page-head">
+      <a href="../competences.html" class="mono" style="text-decoration: none;">← Retour aux compétences</a>
+      <span class="mono" style="display:block; margin-top: 1.5rem;">// ANNEXE 8-1 — Épreuve E5</span>
+      <h1>Tableau de synthèse des réalisations professionnelles</h1>
+      <p class="lead">
+        Vue croisée des situations professionnelles et des compétences
+        du référentiel BTS SIO. Ce tableau reprend le format officiel
+        de l'Annexe 8-1 présentée au jury lors de l'épreuve E5.
+      </p>
+      <p style="margin-top: 1.2rem;">
+        <a href="../assets/files/E5_Synthese_POUPARD_Evan.xlsx" download class="btn btn-primary btn-arrow">Télécharger le tableau (XLSX)</a>
+      </p>
+    </section>
+
+    <section class="container" style="padding-bottom: clamp(2rem, 5vw, 3.5rem);">
+
+      <div class="synthese">
+        <table>
+          <thead>
+            <tr>
+              <th class="c-code">N°</th>
+              <th>Situation professionnelle</th>
+              <th>Période</th>
+              <th class="c-code" title="Gérer le patrimoine informatique">C1</th>
+              <th class="c-code" title="Répondre aux incidents et aux demandes d'assistance et d'évolution">C2</th>
+              <th class="c-code" title="Travailler en mode projet">C3</th>
+              <th class="c-code" title="Mettre à disposition des utilisateurs un service informatique">C4</th>
+              <th class="c-code" title="Organiser son développement professionnel">C5</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="year-row"><td colspan="8">Réalisations en milieu professionnel — première année</td></tr>
+
+            <tr>
+              <td class="c-code">01</td>
+              <td><a href="../situations/sp1-deploiement-poste-hp.html">Préparation et déploiement d'un poste utilisateur</a></td>
+              <td class="c-period">15/09/25 — 19/09/25</td>
+              <td class="check">✓</td><td></td><td></td><td class="check">✓</td><td></td>
+            </tr>
+            <tr>
+              <td class="c-code">02</td>
+              <td><a href="../situations/sp2-ouverture-chantier.html">Ouverture d'un nouveau chantier (SharePoint &amp; réseau)</a></td>
+              <td class="c-period">02/02/26 — 27/02/26</td>
+              <td class="check">✓</td><td></td><td class="check">✓</td><td class="check">✓</td><td></td>
+            </tr>
+            <tr>
+              <td class="c-code">03</td>
+              <td><a href="../situations/sp3-traitement-tickets.html">Traitement des tickets de support utilisateur</a></td>
+              <td class="c-period">01/10/25 — 30/06/26</td>
+              <td></td><td class="check">✓</td><td></td><td class="check">✓</td><td class="check">✓</td>
+            </tr>
+            <tr>
+              <td class="c-code">04</td>
+              <td><a href="../situations/sp4-procedure-o365-mobile.html">Rédaction d'une procédure de dépannage M365 sur mobile</a></td>
+              <td class="c-period">04/05/26 — 29/05/26</td>
+              <td></td><td class="check">✓</td><td></td><td class="check">✓</td><td class="check">✓</td>
+            </tr>
+            <tr>
+              <td class="c-code">05</td>
+              <td><a href="../situations/sp5-imprimante-chantier.html">Installation d'une imprimante multifonction sur chantier</a></td>
+              <td class="c-period">15/06/26 — 19/06/26</td>
+              <td class="check">✓</td><td></td><td></td><td class="check">✓</td><td></td>
+            </tr>
+
+            <tr class="year-row red"><td colspan="8">Réalisations en milieu professionnel — seconde année</td></tr>
+
+            <tr>
+              <td class="c-code">06</td>
+              <td><a href="../situations/sp6-creation-compte-utilisateur.html">Création d'un compte utilisateur complet (AD + Entra ID + M365)</a></td>
+              <td class="c-period">01/09/26 — 05/09/26</td>
+              <td class="check">✓</td><td></td><td></td><td class="check">✓</td><td></td>
+            </tr>
+            <tr>
+              <td class="c-code">07</td>
+              <td><a href="../situations/sp7-remplacement-poste.html">Remplacement d'un poste utilisateur hors service</a></td>
+              <td class="c-period">22/09/26 — 24/09/26</td>
+              <td class="check">✓</td><td class="check">✓</td><td></td><td class="check">✓</td><td></td>
+            </tr>
+            <tr>
+              <td class="c-code">08</td>
+              <td><a href="../situations/sp8-formation-gestionnaire-mots-passe.html">Formation utilisateurs au gestionnaire de mots de passe</a></td>
+              <td class="c-period">13/10/26 — 24/10/26</td>
+              <td></td><td></td><td></td><td class="check">✓</td><td class="check">✓</td>
+            </tr>
+            <tr>
+              <td class="c-code">09</td>
+              <td><a href="../situations/sp9-cloture-chantier.html">Clôture informatique d'un chantier</a></td>
+              <td class="c-period">02/11/26 — 06/11/26</td>
+              <td class="check">✓</td><td></td><td class="check">✓</td><td></td><td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="legend">
+        <span><span class="mark">C1</span> — Gérer le patrimoine informatique</span>
+        <span><span class="mark">C2</span> — Répondre aux incidents et demandes d'assistance</span>
+        <span><span class="mark">C3</span> — Travailler en mode projet</span>
+        <span><span class="mark">C4</span> — Mettre à disposition un service informatique</span>
+        <span><span class="mark">C5</span> — Organiser son développement professionnel</span>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <span class="mono">© 2025 — Poupard Evan · Portfolio BTS SIO 1</span>
+      <div class="footer-links">
+        <a href="mailto:evan.pprd@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/evan-poupard" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const list = document.querySelector('.nav-list');
+    toggle?.addEventListener('click', () => {
+      const open = list.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+  </script>
+</body>
+</html>

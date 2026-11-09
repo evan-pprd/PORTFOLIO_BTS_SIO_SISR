@@ -268,11 +268,14 @@ strong { color: var(--ink); font-weight: 600; }
   color: inherit;
 }
 .card:hover {
-  transform: translateY(-3px); text-decoration: none;
+  transform: translateY(-3px); text-decoration: none; color: inherit;
   border-color: var(--line-2); border-left-color: var(--cyan);
   background: rgba(255, 255, 255, 0.07);
   box-shadow: 0 22px 44px -20px rgba(0, 0, 0, 0.55);
 }
+.card:hover h3 { color: var(--ink); }
+.card:hover .num { color: var(--cyan); }
+.card:nth-child(even):hover .num { color: var(--red); }
 .card:nth-child(even) { border-left-color: var(--red); }
 .card:nth-child(even):hover { border-left-color: var(--red); }
 .card .num {
@@ -371,11 +374,11 @@ strong { color: var(--ink); font-weight: 600; }
 }
 .btn:hover { text-decoration: none; transform: translateY(-1px); }
 .btn-primary { background: var(--cyan); color: var(--blue-deep); }
-.btn-primary:hover { background: var(--cyan-soft); box-shadow: 0 14px 28px -12px rgba(96, 198, 236, 0.55); }
+.btn-primary:hover { background: var(--cyan-soft); color: var(--blue-deep); box-shadow: 0 14px 28px -12px rgba(96, 198, 236, 0.55); }
 .btn-outline { background: transparent; color: var(--ink); border: 1.5px solid var(--line-2); }
 .btn-outline:hover { background: var(--surface-2); border-color: var(--cyan); color: var(--cyan); }
 .btn-accent { background: var(--red); color: var(--ink); }
-.btn-accent:hover { background: #ff1f3f; box-shadow: 0 14px 28px -12px rgba(226, 0, 37, 0.55); }
+.btn-accent:hover { background: #ff1f3f; color: var(--ink); box-shadow: 0 14px 28px -12px rgba(226, 0, 37, 0.55); }
 .btn-arrow::after { content: '→'; display: inline-block; transition: transform 0.2s; }
 .btn-arrow:hover::after { transform: translateX(3px); }
 
