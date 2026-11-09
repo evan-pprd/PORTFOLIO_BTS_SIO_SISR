@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clôture informatique d'un chantier — Portfolio Poupard Evan</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='40' fill='%2360C6EC'/%3E%3C/svg%3E">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="../index.html" class="nav-brand"><span class="dot"></span>POUPARD EVAN / SIO·SISR</a>
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">MENU</button>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="../entreprise.html">Entreprise</a></li>
+          <li><a href="../cv.html">CV</a></li>
+          <li><a href="../competences.html">Compétences</a></li>
+          <li><a href="../situations.html" aria-current="page">Situations Pro</a></li>
+          <li><a href="../realisations.html">Réalisations</a></li>
+          <li><a href="../veille.html">Veille</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container page-head">
+      <a href="../situations.html" class="mono" style="text-decoration: none;">← Retour aux situations</a>
+      <span class="mono" style="display:block; margin-top: 1.5rem;">// SITUATION PROFESSIONNELLE 09</span>
+      <h1>Clôture informatique d'un chantier</h1>
+    </section>
+
+    <section class="container detail">
+
+      <aside class="detail-aside">
+        <span class="label">Sommaire</span>
+        <ul>
+          <li><a href="#contexte">Contexte</a></li>
+          <li><a href="#planification">Planification</a></li>
+          <li><a href="#materiel">Récupération et inventaire du matériel</a></li>
+          <li><a href="#sharepoint">Archivage de l'espace SharePoint</a></li>
+          <li><a href="#habilitations">Révocation des habilitations</a></li>
+          <li><a href="#conclusion">Conclusion</a></li>
+          <li><a href="#competences">Compétences validées</a></li>
+        </ul>
+      </aside>
+
+      <article class="detail-body">
+
+        <h2 id="contexte">Contexte</h2>
+        <p>
+          À la fin d'un chantier, l'ensemble des moyens informatiques déployés
+          dans la base-vie (voir <a href="sp2-ouverture-chantier.html">SP02 —
+          Ouverture d'un nouveau chantier</a>) doit être
+          <strong>démobilisé</strong> de manière structurée. L'enjeu est double&nbsp;:
+          récupérer le matériel pour le réutiliser sur d'autres opérations, et
+          garantir que les <strong>données et accès</strong> liés au chantier
+          sont correctement archivés ou révoqués, en cohérence avec la
+          politique de sécurité de l'entreprise.
+        </p>
+        <p>
+          La clôture m'a été confiée en coordination avec le conducteur de
+          travaux et l'assistante du chantier, sous forme d'une mission
+          cadrée dans le temps couvrant la préparation, l'intervention sur
+          site et les actions administratives post-clôture.
+        </p>
+
+        <h2 id="planification">Planification</h2>
+        <p>
+          Avant toute intervention, j'ai préparé un <strong>plan de
+          clôture</strong> couvrant trois volets&nbsp;:
+        </p>
+        <ul>
+          <li><strong>Matériel</strong>&nbsp;: liste des équipements déployés
+              à récupérer (postes, imprimante, FortiWifi, routeur 4G,
+              périphériques)&nbsp;;</li>
+          <li><strong>Données</strong>&nbsp;: état de l'espace SharePoint
+              du chantier, documents à archiver, documents à supprimer&nbsp;;</li>
+          <li><strong>Accès</strong>&nbsp;: liste des groupes d'habilitation
+              associés au chantier, à révoquer après archivage.</li>
+        </ul>
+        <p>
+          Le plan a été partagé avec la hiérarchie du chantier et validé
+          avant l'intervention, avec une date de bascule claire pour
+          éviter toute perte d'accès pendant que l'activité est encore
+          en cours.
+        </p>
+
+        <h2 id="materiel">Récupération et inventaire du matériel</h2>
+        <p>
+          Sur site, chaque équipement a fait l'objet d'un traitement
+          spécifique&nbsp;:
+        </p>
+        <ul>
+          <li><strong>FortiWifi et routeur 4G</strong>&nbsp;: sauvegarde
+              de la configuration, puis réinitialisation d'usine pour un
+              futur redéploiement sain sur un autre chantier&nbsp;;</li>
+          <li><strong>Postes et périphériques</strong>&nbsp;: vérification
+              de l'état, test de fonctionnement, étiquetage pour retour
+              au stock de l'agence&nbsp;;</li>
+          <li><strong>Imprimante multifonction</strong>&nbsp;: remise à
+              zéro des compteurs, suppression de la boîte scan-to-mail
+              dédiée, retour au stock.</li>
+        </ul>
+        <p>
+          Chaque équipement a été <strong>sorti du parc chantier</strong>
+          dans le référentiel et basculé en « stock » ou « au rebut »
+          selon son état, pour préserver la cohérence de l'inventaire
+          global de l'entreprise.
+        </p>
+
+        <h2 id="sharepoint">Archivage de l'espace SharePoint</h2>
+        <p>
+          L'espace SharePoint créé à l'ouverture du chantier contient des
+          documents à <strong>valeur contractuelle</strong> et doit être
+          conservé, mais plus modifié. Deux actions&nbsp;:
+        </p>
+        <ul>
+          <li>bascule du site en <strong>lecture seule</strong> pour
+              figer les contenus&nbsp;;</li>
+          <li>transfert des documents à archiver dans la zone
+              d'<strong>archivage long terme</strong> prévue par la
+              politique documentaire de l'entreprise, selon la durée
+              de conservation applicable.</li>
+        </ul>
+
+        <h2 id="habilitations">Révocation des habilitations</h2>
+        <p>
+          Dernière étape, une fois les données archivées&nbsp;:
+          <strong>révocation</strong> des accès au chantier clôturé.
+          Les groupes d'habilitation Active Directory liés au chantier
+          sont purgés de leurs membres puis supprimés si plus aucun
+          espace ne les utilise. Les collaborateurs rattachés basculent
+          sur leur affectation suivante.
+        </p>
+        <p>
+          Cette étape s'inscrit dans l'application du
+          <strong>principe de moindre privilège</strong>&nbsp;: aucun
+          accès actif ne doit subsister vers des données qui ne sont
+          plus en production.
+        </p>
+
+        <h2 id="conclusion">Conclusion</h2>
+        <p>
+          Le chantier a été clôturé côté informatique dans les délais
+          prévus par le plan&nbsp;: matériel récupéré et réinjecté dans
+          le stock, données contractuelles archivées conformément à la
+          politique documentaire, habilitations révoquées. Cette mission
+          m'a permis de traiter l'ensemble du
+          <strong>cycle de vie</strong> d'une infrastructure chantier,
+          de l'ouverture à la clôture, et de pratiquer la coordination
+          projet avec des interlocuteurs non techniques (conduite de
+          travaux, assistantes).
+        </p>
+
+        <h2 id="competences">Compétences validées</h2>
+        <p>Cette situation professionnelle valide les compétences suivantes&nbsp;:</p>
+
+        <div class="cards" style="margin-top: 1.5rem;">
+          <a href="../competences/c-gerer-patrimoine.html" class="card">
+            <span class="num">E4 · 01</span>
+            <h3>Gérer le patrimoine informatique</h3>
+            <p>Sortie du parc du matériel, archivage documentaire et révocation des habilitations en fin de cycle de vie.</p>
+            <span class="arrow">Voir la compétence →</span>
+          </a>
+          <a href="../competences/c-mode-projet.html" class="card">
+            <span class="num">E4 · 04</span>
+            <h3>Travailler en mode projet</h3>
+            <p>Planification des étapes de clôture, coordination avec les acteurs du chantier et suivi jusqu'à la bascule.</p>
+            <span class="arrow">Voir la compétence →</span>
+          </a>
+        </div>
+
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <span class="mono">© 2025 — Poupard Evan · Portfolio BTS SIO 1</span>
+      <div class="footer-links">
+        <a href="mailto:evan.pprd@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/evan-poupard" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const list = document.querySelector('.nav-list');
+    toggle?.addEventListener('click', () => {
+      const open = list.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+  </script>
+</body>
+</html>
