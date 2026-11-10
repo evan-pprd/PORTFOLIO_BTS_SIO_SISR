@@ -40,10 +40,10 @@
         <span class="label">Sommaire</span>
         <ul>
           <li><a href="#contexte">Contexte</a></li>
-          <li><a href="#planification">Planification</a></li>
-          <li><a href="#materiel">Récupération et inventaire du matériel</a></li>
-          <li><a href="#sharepoint">Archivage de l'espace SharePoint</a></li>
-          <li><a href="#habilitations">Révocation des habilitations</a></li>
+          <li><a href="#recuperation">Récupération du matériel</a></li>
+          <li><a href="#fortimanager">Suppression du site sur FortiManager</a></li>
+          <li><a href="#traitement">Traitement du matériel récupéré</a></li>
+          <li><a href="#4g">Cas des petits chantiers : routeur 4G</a></li>
           <li><a href="#conclusion">Conclusion</a></li>
           <li><a href="#competences">Compétences validées</a></li>
         </ul>
@@ -53,108 +53,86 @@
 
         <h2 id="contexte">Contexte</h2>
         <p>
-          À la fin d'un chantier, l'ensemble des moyens informatiques déployés
-          dans la base-vie (voir <a href="sp2-ouverture-chantier.html">SP02 —
-          Ouverture d'un nouveau chantier</a>) doit être
-          <strong>démobilisé</strong> de manière structurée. L'enjeu est double&nbsp;:
-          récupérer le matériel pour le réutiliser sur d'autres opérations, et
-          garantir que les <strong>données et accès</strong> liés au chantier
-          sont correctement archivés ou révoqués, en cohérence avec la
-          politique de sécurité de l'entreprise.
-        </p>
-        <p>
-          La clôture m'a été confiée en coordination avec le conducteur de
-          travaux et l'assistante du chantier, sous forme d'une mission
-          cadrée dans le temps couvrant la préparation, l'intervention sur
-          site et les actions administratives post-clôture.
+          À la fin du chantier de l'<strong>Institut Tzanck</strong>, à
+          Antibes, la démobilisation informatique du site devait être
+          réalisée en cohérence avec la fin d'activité des équipes
+          travaux sur place. L'enjeu&nbsp;: récupérer l'ensemble du
+          matériel déployé, le réinjecter dans le circuit et retirer
+          proprement le site des référentiels d'administration.
         </p>
 
-        <h2 id="planification">Planification</h2>
+        <h2 id="recuperation">Récupération du matériel</h2>
         <p>
-          Avant toute intervention, j'ai préparé un <strong>plan de
-          clôture</strong> couvrant trois volets&nbsp;:
+          Je me suis rendu sur site pour récupérer l'ensemble du
+          <strong>matériel informatique</strong> installé pour le
+          chantier&nbsp;:
         </p>
         <ul>
-          <li><strong>Matériel</strong>&nbsp;: liste des équipements déployés
-              à récupérer (postes, imprimante, FortiWifi, routeur 4G,
-              périphériques)&nbsp;;</li>
-          <li><strong>Données</strong>&nbsp;: état de l'espace SharePoint
-              du chantier, documents à archiver, documents à supprimer&nbsp;;</li>
-          <li><strong>Accès</strong>&nbsp;: liste des groupes d'habilitation
-              associés au chantier, à révoquer après archivage.</li>
+          <li>la <strong>baie réseau</strong> et son contenu&nbsp;;</li>
+          <li>les <strong>bornes Wi-Fi</strong> déployées dans la
+              base-vie&nbsp;;</li>
+          <li>les <strong>tablettes</strong> utilisées par les équipes
+              travaux&nbsp;;</li>
+          <li>le reste des équipements associés au site.</li>
         </ul>
+
+        <h2 id="fortimanager">Suppression du site sur FortiManager</h2>
         <p>
-          Le plan a été partagé avec la hiérarchie du chantier et validé
-          avant l'intervention, avec une date de bascule claire pour
-          éviter toute perte d'accès pendant que l'activité est encore
-          en cours.
+          Côté administration, j'ai demandé la <strong>suppression du
+          site</strong> correspondant sur <strong>FortiManager</strong>.
+          Cette étape nettoie la configuration centrale des équipements
+          Fortinet et évite de conserver un site fantôme dans l'outil
+          d'administration.
         </p>
 
-        <h2 id="materiel">Récupération et inventaire du matériel</h2>
+        <h2 id="traitement">Traitement du matériel récupéré</h2>
         <p>
-          Sur site, chaque équipement a fait l'objet d'un traitement
-          spécifique&nbsp;:
+          Le matériel récupéré est traité différemment selon sa
+          nature&nbsp;:
         </p>
         <ul>
-          <li><strong>FortiWifi et routeur 4G</strong>&nbsp;: sauvegarde
-              de la configuration, puis réinitialisation d'usine pour un
-              futur redéploiement sain sur un autre chantier&nbsp;;</li>
-          <li><strong>Postes et périphériques</strong>&nbsp;: vérification
-              de l'état, test de fonctionnement, étiquetage pour retour
-              au stock du siège&nbsp;;</li>
-          <li><strong>Imprimante multifonction</strong>&nbsp;: remise à
-              zéro des compteurs, suppression de la boîte scan-to-mail
-              dédiée, retour au stock.</li>
+          <li>
+            <strong>End devices</strong> (tablettes, téléphones…)&nbsp;:
+            ils sont <strong>réinitialisés dès leur récupération</strong>
+            par le service informatique, de manière à repartir
+            d'une base saine pour leur prochaine affectation.
+          </li>
+          <li>
+            <strong>Matériel réseau</strong>&nbsp;: il n'est
+            <strong>pas réinitialisé tout de suite</strong>. Lorsqu'il
+            sera redéployé sur un futur chantier, la nouvelle
+            configuration poussée depuis l'outil d'administration
+            <strong>réinitialise automatiquement</strong> l'équipement
+            avant application. Une remise à zéro manuelle en amont ne
+            serait pas utile.
+          </li>
         </ul>
-        <p>
-          Chaque équipement a été <strong>sorti du parc chantier</strong>
-          dans le référentiel et basculé en « stock » ou « au rebut »
-          selon son état, pour préserver la cohérence de l'inventaire
-          global de l'entreprise.
-        </p>
 
-        <h2 id="sharepoint">Archivage de l'espace SharePoint</h2>
+        <h2 id="4g">Cas des petits chantiers : routeur 4G</h2>
         <p>
-          L'espace SharePoint créé à l'ouverture du chantier contient des
-          documents à <strong>valeur contractuelle</strong> et doit être
-          conservé, mais plus modifié. Deux actions&nbsp;:
+          Sur les petits chantiers équipés d'un <strong>routeur 4G</strong>
+          (en l'absence de solution filaire ou fibre), la clôture prend
+          en charge deux actions supplémentaires&nbsp;:
         </p>
         <ul>
-          <li>bascule du site en <strong>lecture seule</strong> pour
-              figer les contenus&nbsp;;</li>
-          <li>transfert des documents à archiver dans la zone
-              d'<strong>archivage long terme</strong> prévue par la
-              politique documentaire de l'entreprise, selon la durée
-              de conservation applicable.</li>
+          <li>la <strong>résiliation de la ligne 4G</strong> associée au
+              site, pour arrêter la facturation dès la fin
+              d'activité&nbsp;;</li>
+          <li>le <strong>renvoi du routeur</strong> au prestataire
+              lorsqu'il s'agit d'un <strong>matériel prêté</strong>
+              plutôt qu'acheté.</li>
         </ul>
-
-        <h2 id="habilitations">Révocation des habilitations</h2>
-        <p>
-          Dernière étape, une fois les données archivées&nbsp;:
-          <strong>révocation</strong> des accès au chantier clôturé.
-          Les groupes d'habilitation Active Directory liés au chantier
-          sont purgés de leurs membres puis supprimés si plus aucun
-          espace ne les utilise. Les collaborateurs rattachés basculent
-          sur leur affectation suivante.
-        </p>
-        <p>
-          Cette étape s'inscrit dans l'application du
-          <strong>principe de moindre privilège</strong>&nbsp;: aucun
-          accès actif ne doit subsister vers des données qui ne sont
-          plus en production.
-        </p>
 
         <h2 id="conclusion">Conclusion</h2>
         <p>
-          Le chantier a été clôturé côté informatique dans les délais
-          prévus par le plan&nbsp;: matériel récupéré et réinjecté dans
-          le stock, données contractuelles archivées conformément à la
-          politique documentaire, habilitations révoquées. Cette mission
-          m'a permis de traiter l'ensemble du
-          <strong>cycle de vie</strong> d'une infrastructure chantier,
-          de l'ouverture à la clôture, et de pratiquer la coordination
-          projet avec des interlocuteurs non techniques (conduite de
-          travaux, assistantes).
+          Le chantier a été clôturé côté informatique en réinjectant
+          le matériel dans le circuit Vinci et en retirant le site
+          des outils d'administration. Cette mission m'a permis de
+          traiter l'ensemble du <strong>cycle de vie</strong> d'une
+          infrastructure chantier, de l'ouverture
+          (voir <a href="sp2-ouverture-chantier.html">SP02</a>) à la
+          démobilisation, et de comprendre la logique métier derrière
+          le traitement différencié des équipements selon leur nature.
         </p>
 
         <h2 id="competences">Compétences validées</h2>
@@ -164,13 +142,13 @@
           <a href="../competences/c-gerer-patrimoine.html" class="card">
             <span class="num">E4 · 01</span>
             <h3>Gérer le patrimoine informatique</h3>
-            <p>Sortie du parc du matériel, archivage documentaire et révocation des habilitations en fin de cycle de vie.</p>
+            <p>Récupération et traitement différencié du matériel en fin de cycle, suppression du site sur FortiManager, résiliation d'abonnements et retour du matériel prêté.</p>
             <span class="arrow">Voir la compétence →</span>
           </a>
           <a href="../competences/c-mode-projet.html" class="card">
             <span class="num">E4 · 04</span>
             <h3>Travailler en mode projet</h3>
-            <p>Planification des étapes de clôture, coordination avec les acteurs du chantier et suivi jusqu'à la bascule.</p>
+            <p>Coordination des étapes de clôture (récupération sur site, administration centrale, suivi des abonnements) jusqu'à la bascule complète.</p>
             <span class="arrow">Voir la compétence →</span>
           </a>
         </div>
