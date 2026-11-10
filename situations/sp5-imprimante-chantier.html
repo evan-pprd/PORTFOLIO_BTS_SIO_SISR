@@ -31,7 +31,7 @@
     <section class="container page-head">
       <a href="../situations.html" class="mono" style="text-decoration: none;">← Retour aux situations</a>
       <span class="mono" style="display:block; margin-top: 1.5rem;">// SITUATION PROFESSIONNELLE 05</span>
-      <h1>Installation d'une imprimante multifonction sur chantier</h1>
+      <h1>Installation d'une imprimante sur chantier</h1>
     </section>
 
     <section class="container detail">
@@ -40,9 +40,11 @@
         <span class="label">Sommaire</span>
         <ul>
           <li><a href="#contexte">Contexte</a></li>
-          <li><a href="#preparation">Préparation en agence</a></li>
-          <li><a href="#installation">Installation sur site</a></li>
-          <li><a href="#diffusion">Mise à disposition</a></li>
+          <li><a href="#reseau">Raccordement réseau</a></li>
+          <li><a href="#config">Configuration IP &amp; IPAM</a></li>
+          <li><a href="#scan">Service scan-to-mail</a></li>
+          <li><a href="#serveur">Intégration au serveur d'impression</a></li>
+          <li><a href="#tests">Tests et mise en service</a></li>
           <li><a href="#conclusion">Conclusion</a></li>
           <li><a href="#competences">Compétences validées</a></li>
         </ul>
@@ -52,86 +54,104 @@
 
         <h2 id="contexte">Contexte</h2>
         <p>
-          Dans le cadre du fonctionnement courant d'un chantier, une
-          <strong>imprimante multifonction</strong> doit être mise à disposition
-          des équipes travaux pour l'impression des plans, des bons de livraison
-          et des documents administratifs, ainsi que pour la numérisation vers
-          la messagerie professionnelle.
-        </p>
-        <p>
-          J'ai été chargé de prendre en charge le déploiement d'une imprimante
-          multifonction réseau dans la base-vie d'un chantier existant, depuis
-          la préparation en agence jusqu'à la remise en service auprès des
-          utilisateurs.
+          Sur le chantier de l'<strong>école Pauliani</strong>, le chef de
+          chantier a commandé une imprimante multifonction pour les équipes
+          travaux de la base-vie. Une fois le matériel livré sur site, la
+          mission m'a été confiée côté service informatique : me rendre sur
+          place pour en assurer l'installation complète, du raccordement
+          réseau jusqu'à l'intégration au parc d'impression centralisé de
+          la délégation bâtiment.
         </p>
 
-        <h2 id="preparation">Préparation en agence</h2>
+        <h2 id="reseau">Raccordement réseau</h2>
         <p>
-          Avant l'intervention sur site, plusieurs étapes de préparation ont
-          été menées depuis l'siège du Mercantour&nbsp;:
+          Sur site, j'ai commencé par raccorder l'imprimante en
+          <strong>filaire</strong> au <strong>FortiWifi Fortinet</strong>
+          qui assure la connectivité de la base-vie. J'ai ensuite
+          configuré le <strong>port du FortiSwitch</strong> correspondant
+          pour affecter l'imprimante au <strong>VLAN</strong> prévu pour
+          ce type d'équipement, afin de l'isoler du reste du trafic
+          utilisateur.
+        </p>
+
+        <h2 id="config">Configuration IP &amp; IPAM</h2>
+        <p>
+          J'ai ensuite configuré les paramètres réseau de l'imprimante
+          directement depuis son interface d'administration&nbsp;:
+          <strong>adresse IP</strong>, <strong>masque</strong>,
+          <strong>passerelle</strong> et serveurs <strong>DNS</strong>.
+        </p>
+        <p>
+          Une fois l'imprimante joignable, je me suis connecté à
+          <strong>Efficient IP</strong> (l'outil IPAM de Vinci) pour
+          <strong>réserver l'adresse</strong> que l'imprimante avait
+          obtenue en DHCP. Cette réservation garantit qu'elle conservera
+          la même adresse dans le temps, ce qui est indispensable pour
+          que les postes clients et le serveur d'impression la trouvent
+          de manière fiable.
+        </p>
+
+        <h2 id="scan">Service scan-to-mail</h2>
+        <p>
+          L'imprimante devait également permettre d'envoyer les documents
+          numérisés par courriel aux utilisateurs
+          (<strong>scan-to-mail</strong>). J'ai configuré sur l'imprimante
+          le service <strong>SMTP</strong> en pointant vers le serveur
+          SMTP de Vinci, puis j'ai demandé l'<strong>autorisation</strong>
+          de l'adresse IP de l'imprimante sur ce serveur&nbsp;: sans cette
+          autorisation, les envois seraient rejetés par le relais SMTP.
+        </p>
+        <p>
+          Pour faciliter la prise en main par les conducteurs de travaux,
+          j'ai ensuite pré-rempli le <strong>carnet d'adresses</strong>
+          de l'imprimante avec les adresses mail des principaux
+          utilisateurs du chantier. Ils n'ont ainsi plus besoin de la
+          saisir manuellement à chaque numérisation.
+        </p>
+
+        <h2 id="serveur">Intégration au serveur d'impression</h2>
+        <p>
+          Dernière étape côté infrastructure&nbsp;: j'ai ajouté
+          l'imprimante sur le <strong>serveur d'impression</strong> de
+          la délégation bâtiment, en installant le <strong>driver</strong>
+          correspondant. Cette intégration apporte deux bénéfices&nbsp;:
         </p>
         <ul>
-          <li>recensement de l'équipement et ajout au <strong>parc informatique</strong>
-              (numéro de série, modèle, affectation chantier)&nbsp;;</li>
-          <li>attribution d'une <strong>adresse IP fixe</strong> cohérente avec
-              le plan d'adressage du site&nbsp;;</li>
-          <li>mise à jour du <strong>firmware</strong> de l'imprimante vers la
-              dernière version stable publiée par le constructeur&nbsp;;</li>
-          <li>préconfiguration du <strong>scan-to-mail</strong> vers une boîte
-              partagée chantier.</li>
+          <li>les utilisateurs peuvent imprimer sur cette imprimante
+              <strong>depuis n'importe quel poste</strong> du périmètre
+              sans configuration locale&nbsp;;</li>
+          <li>le parc d'imprimantes de la délégation est géré de
+              manière <strong>centralisée et homogène</strong>, avec un
+              seul point de pilotage pour les mises à jour de drivers et
+              le suivi des files d'impression.</li>
         </ul>
 
-        <h2 id="installation">Installation sur site</h2>
+        <h2 id="tests">Tests et mise en service</h2>
         <p>
-          Sur place, l'installation s'est déroulée en plusieurs étapes&nbsp;:
-        </p>
-        <h3>Étape 1 — Raccordement physique et réseau</h3>
-        <p>
-          L'imprimante est reliée au switch de la base-vie via un câble Ethernet.
-          Le raccordement électrique s'effectue sur une prise ondulée dédiée pour
-          garantir la continuité d'impression en cas de micro-coupure.
-        </p>
-        <h3>Étape 2 — Vérification de l'intégration réseau</h3>
-        <p>
-          Test de connectivité (<code>ping</code> depuis un poste de la base-vie),
-          vérification de l'accès à l'interface d'administration web de
-          l'imprimante, contrôle de la bonne application de l'adresse IP fixe.
-        </p>
-        <h3>Étape 3 — Déploiement de la file d'impression</h3>
-        <p>
-          Création de la file d'impression sur le serveur d'impression centralisé,
-          publication via <strong>stratégie de groupe (GPO)</strong> aux postes
-          rattachés au chantier. Les utilisateurs retrouvent ainsi l'imprimante
-          automatiquement à l'ouverture de leur session Windows, sans
-          intervention manuelle.
-        </p>
-        <h3>Étape 4 — Test fonctionnel complet</h3>
-        <p>
-          Impression de test, vérification de la numérisation vers la boîte
-          partagée, test d'un poste utilisateur de référence pour valider la
-          chaîne complète.
-        </p>
-
-        <h2 id="diffusion">Mise à disposition</h2>
-        <p>
-          Une fois l'installation validée, les utilisateurs de la base-vie ont
-          été informés de la mise en service. Une brève remise en main propre
-          a permis de présenter&nbsp;:
+          Avant de laisser l'imprimante aux équipes du chantier, deux
+          tests de bout en bout&nbsp;:
         </p>
         <ul>
-          <li>l'emplacement physique de l'équipement&nbsp;;</li>
-          <li>le nom de la file d'impression déployée sur leurs postes&nbsp;;</li>
-          <li>la procédure de numérisation vers la boîte partagée chantier.</li>
+          <li>un <strong>test de scan-to-mail</strong> vers une adresse
+              connue, pour valider la chaîne SMTP complète (imprimante →
+              relais Vinci → boîte destinataire)&nbsp;;</li>
+          <li>une <strong>impression de page de test</strong> lancée
+              depuis le serveur d'impression, pour vérifier que
+              l'imprimante est bien pilotée par la file centralisée.</li>
         </ul>
 
         <h2 id="conclusion">Conclusion</h2>
         <p>
-          L'imprimante a été déployée dans les délais prévus et est pleinement
-          intégrée au parc informatique et au réseau du chantier. Le
-          déploiement via GPO évite toute action manuelle côté utilisateur
-          et garantit une mise à disposition homogène. Cette mission m'a
-          permis de pratiquer concrètement l'intégration d'un équipement
-          réseau dans une infrastructure existante.
+          L'imprimante a été livrée aux équipes travaux pleinement
+          opérationnelle, avec un <strong>carnet d'adresses déjà
+          utilisable</strong> et une intégration au parc central qui
+          évite toute configuration côté utilisateur. Cette mission m'a
+          permis de pratiquer l'installation d'un équipement sur un
+          réseau d'entreprise, de la couche physique (câblage, port
+          FortiSwitch) jusqu'aux services applicatifs (SMTP, serveur
+          d'impression), tout en coordonnant plusieurs composants
+          d'infrastructure Vinci (FortiGate, Efficient IP, relais SMTP,
+          serveur d'impression).
         </p>
 
         <h2 id="competences">Compétences validées</h2>
@@ -141,19 +161,19 @@
           <a href="../competences/c-gerer-patrimoine.html" class="card">
             <span class="num">E4 · 01</span>
             <h3>Gérer le patrimoine informatique</h3>
-            <p>Ajout de l'équipement au parc, recensement, gestion de l'adressage IP et des habilitations.</p>
+            <p>Intégration de l'équipement au parc d'impression central, réservation IPAM, mise en conformité avec les référentiels réseau et SMTP.</p>
             <span class="arrow">Voir la compétence →</span>
           </a>
           <a href="../competences/c-mettre-disposition.html" class="card">
             <span class="num">E4 · 03</span>
             <h3>Mettre à disposition des utilisateurs un service informatique</h3>
-            <p>Déploiement de la file d'impression via GPO et accompagnement des utilisateurs sur site.</p>
+            <p>Service d'impression et de numérisation opérationnel pour les équipes travaux, carnet d'adresses pré-rempli pour faciliter la prise en main.</p>
             <span class="arrow">Voir la compétence →</span>
           </a>
           <a href="../competences/c-installer-deployer.html" class="card">
             <span class="num">E5 · 02</span>
             <h3>Installer, tester et déployer une solution d'infrastructure réseau</h3>
-            <p>Raccordement, configuration IP, mise à jour firmware et test d'intégration sur site.</p>
+            <p>Raccordement filaire, configuration du port et du VLAN sur le FortiSwitch, paramétrage IP et SMTP, tests fonctionnels complets.</p>
             <span class="arrow">Voir la compétence →</span>
           </a>
         </div>
