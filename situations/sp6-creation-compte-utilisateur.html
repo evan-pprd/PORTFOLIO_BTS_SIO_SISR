@@ -64,21 +64,32 @@
 
         <h3>Étape 1 — Accès à l'Active Directory</h3>
         <p>
-          Je me suis connecté à l'<strong>Active Directory</strong> pour
-          démarrer la création du compte depuis l'outil d'administration
-          des identités de l'entreprise.
+          Je me suis connecté à l'<strong>Active Directory</strong> et
+          j'ai suivi le chemin suivant depuis la console Active Directory
+          Administrative Center&nbsp;:
+          <code>vincic-fr (local) → _Administration → _Central → EXCHANGE
+          → Create Mailbox</code>. Ce nœud regroupe les
+          <strong>groupes de création de boîtes aux lettres</strong>,
+          nommés par délégation et par type de licence.
         </p>
 
         <h3>Étape 2 — Choix du type de licence Microsoft</h3>
         <p>
           L'étape qui demande une décision côté administrateur est le
-          choix du <strong>type de licence Microsoft</strong> à
-          attribuer au nouvel arrivant. Ce choix dépend du profil du
-          collaborateur (besoins d'outils collaboratifs, de messagerie,
-          d'applications bureautiques, etc.) et conditionne ensuite
-          l'ensemble des services Microsoft 365 auxquels il aura
-          accès.
+          choix du <strong>type de licence Microsoft</strong>
+          (<strong>E1</strong> ou <strong>E3</strong>) à attribuer au
+          nouvel arrivant. Ce choix dépend du profil du collaborateur
+          (besoins d'outils collaboratifs, de messagerie, d'applications
+          bureautiques, etc.) et conditionne ensuite l'ensemble des
+          services Microsoft 365 auxquels il aura accès. Le groupe
+          correspondant à la bonne délégation et au bon type de licence
+          est sélectionné depuis la liste.
         </p>
+
+        <figure>
+          <img src="../assets/screenshots/sp6-ad-groupes-mailbox.png" alt="Console Active Directory Administrative Center : liste des groupes de création de mailbox, groupe de la délégation sélectionné pour une licence E1 et E3">
+          <figcaption>Active Directory Administrative Center — nœud <code>Create Mailbox</code> : sélection du groupe correspondant à la délégation et au type de licence (E1 / E3).</figcaption>
+        </figure>
 
         <h3>Étape 3 — Exécution du script de création</h3>
         <p>
@@ -105,6 +116,11 @@
           d'incohérence entre les différents comptes du même profil.
         </p>
 
+        <figure>
+          <img src="../assets/screenshots/sp6-groupes-licences.png" alt="Extrait de la liste des groupes de licence dans Entra ID, utilisés pour provisionner les services Microsoft 365">
+          <figcaption>Entra ID — extrait des groupes de licence utilisés pour provisionner automatiquement les services Microsoft 365 selon le profil du compte.</figcaption>
+        </figure>
+
         <h2 id="confirmation">Confirmation et suite</h2>
         <p>
           Une fois le script terminé, un <strong>mail de
@@ -113,6 +129,11 @@
           d'arrivée et permet d'enchaîner sur les étapes suivantes
           côté matériel et accès applicatifs.
         </p>
+
+        <figure>
+          <img src="../assets/screenshots/sp6-mail-confirmation.png" alt="Mail de rapport de création de mailbox envoyé automatiquement à l'issue du script">
+          <figcaption>Mail automatique «&nbsp;Rapport de création Mailbox&nbsp;» confirmant la création de la boîte aux lettres pour le nouvel arrivant.</figcaption>
+        </figure>
 
         <h2 id="conclusion">Conclusion</h2>
         <p>
