@@ -5,21 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Création d'un compte utilisateur — Portfolio Poupard Evan</title>
   <link rel="stylesheet" href="../assets/css/style.css">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='40' fill='%2360C6EC'/%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23003B7A'/%3E%3Ctext x='32' y='42' font-family='Arial' font-weight='700' font-size='28' text-anchor='middle' fill='%2360C6EC'%3EEP%3C/text%3E%3C/svg%3E">
 </head>
 <body>
 
   <header class="site-header">
     <div class="container nav">
-      <a href="../index.html" class="nav-brand"><span class="dot"></span>POUPARD EVAN / SIO·SISR</a>
-      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">MENU</button>
-      <nav>
+      <a href="../index.html" class="nav-brand">
+        <span class="brand-mark" aria-hidden="true">EP</span>
+        <span class="brand-text">Poupard Evan<small>BTS SIO · option SISR</small></span>
+      </a>
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false"><span class="bars" aria-hidden="true"></span>Menu</button>
+      <nav aria-label="Navigation principale">
         <ul class="nav-list">
           <li><a href="../index.html">Accueil</a></li>
           <li><a href="../entreprise.html">Entreprise</a></li>
           <li><a href="../cv.html">CV</a></li>
           <li><a href="../competences.html">Compétences</a></li>
-          <li><a href="../situations.html" aria-current="page">Situations Pro</a></li>
+          <li><a href="../situations.html" aria-current="page">Situations pro</a></li>
           <li><a href="../realisations.html">Réalisations</a></li>
           <li><a href="../veille.html">Veille</a></li>
         </ul>
@@ -29,12 +32,12 @@
 
   <main>
     <section class="container page-head">
-      <a href="../situations.html" class="mono" style="text-decoration: none;">← Retour aux situations</a>
-      <span class="mono" style="display:block; margin-top: 1.5rem;">// SITUATION PROFESSIONNELLE 06</span>
+      <a href="../situations.html" class="back-link">← Retour aux situations</a>
+      <div class="kicker-row"><span class="badge badge-sp badge-lg">SP9</span><span class="mono">Situation professionnelle 9</span></div>
       <h1>Création d'un compte utilisateur pour un nouvel arrivant</h1>
-      <div style="margin-top: 1.5rem; display: inline-flex; align-items: center; gap: 0.6rem; padding: 0.4rem 0.9rem; background: var(--surface); border: 1px solid var(--line); border-left: 3px solid var(--cyan); border-radius: var(--radius); font-size: 0.9rem; color: var(--ink-soft);">
-        <span class="mono" style="color: var(--cyan); font-weight: 600;">PÉRIODE</span>
-        <span>12 → 13 novembre 2026 — 2 jours</span>
+      <div class="meta-row">
+        <span class="meta"><span class="meta-label">Période</span>12 → 13 novembre 2026 · 2 jours</span>
+        <span class="meta"><span class="meta-label">Compétences</span><span class="chips"><span class="chip">C1</span><span class="chip">C5</span></span></span>
       </div>
     </section>
 
@@ -56,11 +59,10 @@
         <h2 id="contexte">Contexte</h2>
         <p>
           L'arrivée d'un <strong>nouveau collaborateur</strong>
-          lance côté service informatique une chaîne d'actions
+          déclenche côté service informatique une chaîne d'actions
           destinée à lui fournir son environnement de travail. Mon
           <strong>N+1</strong> m'a confié la création du compte
-          utilisateur pour un nouvel arrivant&nbsp;: c'est la première
-          brique sur laquelle reposent ensuite l'ensemble des accès
+          utilisateur pour un nouvel arrivant&nbsp;: c'est le socle sur lequel reposent ensuite l'ensemble des accès
           métier (messagerie, partages, applications).
         </p>
 
@@ -97,8 +99,7 @@
 
         <h3>Étape 3 — Exécution du script de création</h3>
         <p>
-          Le choix de la licence <strong>lance automatiquement un
-          script</strong> interne. Ce script réalise les actions
+          Le choix de la licence <strong>déclenche automatiquement un script</strong> interne. Ce script réalise les actions
           suivantes sans intervention supplémentaire&nbsp;:
         </p>
         <ul>
@@ -114,7 +115,7 @@
           </li>
         </ul>
         <p>
-          Cette automatisation garantit que chaque compte créé
+          Cette automatisation assure que chaque compte créé
           respecte les <strong>règles d'habilitation</strong> définies
           par l'entreprise, sans risque d'oubli de groupe ni
           d'incohérence entre les différents comptes du même profil.
@@ -150,26 +151,27 @@
           d'un grand groupe et de comprendre l'intérêt d'une
           <strong>automatisation</strong> des opérations courantes
           pour garantir la cohérence du référentiel et appliquer le
-          <strong>principe de moindre privilège (chaque personne a juste les accès dont elle a besoin)</strong>.
+          <strong>principe de moindre privilège (chaque utilisateur ne dispose que des accès dont il a besoin)</strong>.
         </p>
 
         <h2 id="competences">Compétences validées</h2>
         <p>Cette situation valide les compétences suivantes du référentiel (Annexe 8-1)&nbsp;:</p>
-
-        <div class="cards" style="margin-top: 1.5rem;">
-          <a href="../competences/c-gerer-patrimoine.html" class="card">
-            <span class="num">C 01</span>
-            <h3>Gérer le patrimoine informatique</h3>
-            <p>Recenser, configurer et raccorder les ressources numériques au système d'information.</p>
-            <span class="arrow">Voir la compétence →</span>
+        <div class="comp-list">
+          <a href="../competences/c-gerer-patrimoine.html" class="comp-row">
+            <span class="badge badge-c badge-lg">C1</span>
+            <span class="comp-row-text"><strong>Gérer le patrimoine informatique</strong><small>Recenser, configurer et raccorder les ressources numériques au système d'information.</small></span>
+            <span class="arrow" aria-hidden="true">→</span>
           </a>
-          <a href="../competences/c-mettre-disposition.html" class="card">
-            <span class="num">C 05</span>
-            <h3>Mettre à disposition des utilisateurs un service informatique</h3>
-            <p>Préparer, tester et livrer un service prêt à l'emploi.</p>
-            <span class="arrow">Voir la compétence →</span>
+          <a href="../competences/c-mettre-disposition.html" class="comp-row">
+            <span class="badge badge-c badge-lg">C5</span>
+            <span class="comp-row-text"><strong>Mettre à disposition des utilisateurs un service informatique</strong><small>Préparer, tester et livrer un service opérationnel.</small></span>
+            <span class="arrow" aria-hidden="true">→</span>
           </a>
         </div>
+
+        <nav class="sp-pager" aria-label="Situations voisines">
+          <a class="pager prev" href="sp8-imprimante-chantier.html"><small>← Précédente</small><span>SP8 · Installation d'une imprimante sur chantier</span></a>
+        </nav>
 
       </article>
     </section>
@@ -177,10 +179,14 @@
 
   <footer class="site-footer">
     <div class="container footer-grid">
-      <span class="mono">© 2025 — Poupard Evan · Portfolio BTS SIO SISR</span>
+      <div class="footer-id">
+        <span class="brand-mark brand-mark--sm" aria-hidden="true">EP</span>
+        <span>Poupard Evan · Portfolio BTS SIO SISR · 2025–2027</span>
+      </div>
       <div class="footer-links">
         <a href="mailto:evan.pprd@gmail.com">Email</a>
         <a href="https://www.linkedin.com/in/evan-poupard" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="../cv.html">CV</a>
       </div>
     </div>
   </footer>

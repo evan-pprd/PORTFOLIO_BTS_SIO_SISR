@@ -5,21 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Veille technologique — Portfolio Poupard Evan</title>
   <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='40' fill='%230aa5c2'/%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23003B7A'/%3E%3Ctext x='32' y='42' font-family='Arial' font-weight='700' font-size='28' text-anchor='middle' fill='%2360C6EC'%3EEP%3C/text%3E%3C/svg%3E">
 </head>
 <body>
 
   <header class="site-header">
     <div class="container nav">
-      <a href="index.html" class="nav-brand"><span class="dot"></span>POUPARD EVAN / SIO·SISR</a>
-      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">MENU</button>
-      <nav>
+      <a href="index.html" class="nav-brand">
+        <span class="brand-mark" aria-hidden="true">EP</span>
+        <span class="brand-text">Poupard Evan<small>BTS SIO · option SISR</small></span>
+      </a>
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false"><span class="bars" aria-hidden="true"></span>Menu</button>
+      <nav aria-label="Navigation principale">
         <ul class="nav-list">
           <li><a href="index.html">Accueil</a></li>
           <li><a href="entreprise.html">Entreprise</a></li>
           <li><a href="cv.html">CV</a></li>
           <li><a href="competences.html">Compétences</a></li>
-          <li><a href="situations.html">Situations Pro</a></li>
+          <li><a href="situations.html">Situations pro</a></li>
           <li><a href="realisations.html">Réalisations</a></li>
           <li><a href="veille.html" aria-current="page">Veille</a></li>
         </ul>
@@ -29,7 +32,7 @@
 
   <main>
     <section class="container page-head">
-      <span class="mono">// 06 — Veille technologique</span>
+      <span class="mono">Veille technologique</span>
       <h1>Ma veille technologique</h1>
       <p class="lead">
         La veille technologique consiste à surveiller activement l'évolution des
@@ -43,12 +46,12 @@
       <div class="veille-meta">
         <div class="item">
           <span class="mono">Méthode</span>
-          <p style="font-size: 0.95rem;">Lecture quotidienne d'avis CERT-FR, abonnements RSS aux blogs éditeurs
+          <p>Lecture quotidienne d'avis CERT-FR, abonnements RSS aux blogs éditeurs
           (Fortinet, Microsoft) et suivi de comptes spécialisés.</p>
         </div>
         <div class="item">
           <span class="mono">Sources principales</span>
-          <p style="font-size: 0.95rem;">
+          <p>
             <a href="https://www.cert.ssi.gouv.fr/avis/" target="_blank" rel="noopener">CERT-FR</a> ·
             <a href="https://cyber.gouv.fr/actualites" target="_blank" rel="noopener">ANSSI</a> ·
             <a href="https://www.fortinet.com/blog/threat-research.html" target="_blank" rel="noopener">Fortinet</a> ·
@@ -101,13 +104,13 @@
         <h2><span class="num">01</span> Cybersécurité</h2>
         <p>
           Suivi des vulnérabilités critiques touchant les équipements
-          Fortinet déployés au siège et sur les chantiers de la délégation.
+          Fortinet déployés à l'agence et sur les chantiers.
         </p>
-        <div class="cards" style="margin-top: 1.5rem;">
+        <div class="cards">
           <a href="veille/v1-fortinet.html" class="card">
-            <span class="num">VEILLE 01</span>
+            <span class="card-top"><span class="badge badge-sp">V1</span></span>
             <h3>Suivi des vulnérabilités Fortinet</h3>
-            <p>Veille sur les CVE FortiOS, FortiGate et FortiWifi, et bonnes pratiques de durcissement appliquées aux chantiers. Lien direct avec SP 02, SP 05, SP 09 et SP 10.</p>
+            <p>Veille sur les CVE FortiOS, FortiGate et FortiWifi, et bonnes pratiques de durcissement appliquées aux chantiers. Lien direct avec SP3, SP6, SP7 et SP8.</p>
             <span class="arrow">Lire l'analyse →</span>
           </a>
         </div>
@@ -119,11 +122,11 @@
           Évolutions de la pile Microsoft qui outille mon quotidien&nbsp;: préparation
           de poste, création de compte, gestion des licences et des habilitations.
         </p>
-        <div class="cards" style="margin-top: 1.5rem;">
+        <div class="cards">
           <a href="veille/v2-modern-workplace.html" class="card">
-            <span class="num">VEILLE 02</span>
+            <span class="card-top"><span class="badge badge-sp">V2</span></span>
             <h3>Microsoft modern workplace : Intune, AutoPilot et Entra ID</h3>
-            <p>Suivi des évolutions Intune, AutoPilot, Entra ID et des méthodes d'authentification modernes (MFA, Temporary Access Pass). Lien direct avec SP 01, SP 06 et SP 07.</p>
+            <p>Suivi des évolutions Intune, AutoPilot, Entra ID et des méthodes d'authentification modernes (MFA, Temporary Access Pass). Lien direct avec SP1, SP5 et SP9.</p>
             <span class="arrow">Lire l'analyse →</span>
           </a>
         </div>
@@ -135,11 +138,11 @@
           Évolution des solutions de connectivité pour les sites distants, en lien
           direct avec mes missions d'ouverture et de refonte de sites.
         </p>
-        <div class="cards" style="margin-top: 1.5rem;">
+        <div class="cards">
           <a href="veille/v3-5g-chantier.html" class="card">
-            <span class="num">VEILLE 03</span>
+            <span class="card-top"><span class="badge badge-sp">V3</span></span>
             <h3>La 5G fixe comme connectivité de site distant</h3>
-            <p>Étude de la 5G en accès fixe (FWA) comme évolution possible de la solution 4G de secours actuellement déployée sur les chantiers. Lien direct avec SP 02 et SP 10.</p>
+            <p>Étude de la 5G en accès fixe (FWA) comme évolution possible de la solution 4G de secours actuellement déployée sur les chantiers. Lien direct avec SP3 et SP7.</p>
             <span class="arrow">Lire l'analyse →</span>
           </a>
         </div>
@@ -150,10 +153,14 @@
 
   <footer class="site-footer">
     <div class="container footer-grid">
-      <span class="mono">© 2025 — Poupard Evan · Portfolio BTS SIO SISR</span>
+      <div class="footer-id">
+        <span class="brand-mark brand-mark--sm" aria-hidden="true">EP</span>
+        <span>Poupard Evan · Portfolio BTS SIO SISR · 2025–2027</span>
+      </div>
       <div class="footer-links">
         <a href="mailto:evan.pprd@gmail.com">Email</a>
         <a href="https://www.linkedin.com/in/evan-poupard" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="cv.html">CV</a>
       </div>
     </div>
   </footer>

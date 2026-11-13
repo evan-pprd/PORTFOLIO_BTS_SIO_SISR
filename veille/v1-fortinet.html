@@ -5,21 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vulnérabilités Fortinet — Portfolio Poupard Evan</title>
   <link rel="stylesheet" href="../assets/css/style.css">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='40' fill='%2360C6EC'/%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23003B7A'/%3E%3Ctext x='32' y='42' font-family='Arial' font-weight='700' font-size='28' text-anchor='middle' fill='%2360C6EC'%3EEP%3C/text%3E%3C/svg%3E">
 </head>
 <body>
 
   <header class="site-header">
     <div class="container nav">
-      <a href="../index.html" class="nav-brand"><span class="dot"></span>POUPARD EVAN / SIO·SISR</a>
-      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">MENU</button>
-      <nav>
+      <a href="../index.html" class="nav-brand">
+        <span class="brand-mark" aria-hidden="true">EP</span>
+        <span class="brand-text">Poupard Evan<small>BTS SIO · option SISR</small></span>
+      </a>
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false"><span class="bars" aria-hidden="true"></span>Menu</button>
+      <nav aria-label="Navigation principale">
         <ul class="nav-list">
           <li><a href="../index.html">Accueil</a></li>
           <li><a href="../entreprise.html">Entreprise</a></li>
           <li><a href="../cv.html">CV</a></li>
           <li><a href="../competences.html">Compétences</a></li>
-          <li><a href="../situations.html">Situations Pro</a></li>
+          <li><a href="../situations.html">Situations pro</a></li>
           <li><a href="../realisations.html">Réalisations</a></li>
           <li><a href="../veille.html" aria-current="page">Veille</a></li>
         </ul>
@@ -29,8 +32,8 @@
 
   <main>
     <section class="container page-head">
-      <a href="../veille.html" class="mono" style="text-decoration: none;">← Retour à la veille</a>
-      <span class="mono" style="display:block; margin-top: 1.5rem;">// VEILLE 01 · THÈME&nbsp;: CYBERSÉCURITÉ</span>
+      <a href="../veille.html" class="back-link">← Retour à la veille</a>
+      <span class="mono kicker">VEILLE 01 · THÈME&nbsp;: CYBERSÉCURITÉ</span>
       <h1>Suivi des vulnérabilités Fortinet</h1>
     </section>
 
@@ -59,7 +62,7 @@
         </p>
         <p>
           J'ai découvert ce sujet en suivant l'actualité du <strong>CERT-FR</strong>
-          (l'agence nationale qui publie des alertes de sécurité)&nbsp;: plusieurs
+          (centre gouvernemental de veille et d'alerte rattaché à l'ANSSI)&nbsp;: plusieurs
           avis critiques concernant FortiOS y sont publiés chaque trimestre.
           Comprendre comment ces vulnérabilités fonctionnent et comment elles
           sont corrigées m'a paru indispensable, étant donné que je manipule
@@ -72,11 +75,11 @@
         </p>
         <ul>
           <li>les <strong>vulnérabilités publiées</strong> (CVE) qui concernent
-              FortiOS, FortiGate et FortiWifi, leur niveau de gravité ;</li>
+              FortiOS, FortiGate et FortiWifi, et leur niveau de gravité ;</li>
           <li>les <strong>bonnes pratiques de durcissement</strong> recommandées
               par Fortinet et le CERT-FR&nbsp;: restriction de l'interface
               d'administration, désactivation des services exposés non utilisés,
-              mise en place de l'authentification multi-facteurs pour les
+              mise en place de l'authentification multifacteur pour les
               administrateurs, application rapide des correctifs.</li>
         </ul>
 
@@ -98,8 +101,7 @@
         <ul>
           <li>d'alerter rapidement les ingénieurs réseaux lorsqu'une CVE critique
               touche un équipement déjà déployé sur nos chantiers ;</li>
-          <li>de comprendre les choix de configuration imposés par le template
-              centralisé (restriction de l'interface, fermeture de services par
+          <li>de comprendre les choix de configuration imposés par le modèle de configuration centralisé (restriction de l'interface, fermeture de services par
               défaut) — sujets que je ne maîtrisais pas en arrivant ;</li>
           <li>d'anticiper les fenêtres de mise à jour à planifier sur les sites
               les plus exposés.</li>
@@ -126,10 +128,14 @@
 
   <footer class="site-footer">
     <div class="container footer-grid">
-      <span class="mono">© 2025 — Poupard Evan · Portfolio BTS SIO SISR</span>
+      <div class="footer-id">
+        <span class="brand-mark brand-mark--sm" aria-hidden="true">EP</span>
+        <span>Poupard Evan · Portfolio BTS SIO SISR · 2025–2027</span>
+      </div>
       <div class="footer-links">
         <a href="mailto:evan.pprd@gmail.com">Email</a>
         <a href="https://www.linkedin.com/in/evan-poupard" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="../cv.html">CV</a>
       </div>
     </div>
   </footer>

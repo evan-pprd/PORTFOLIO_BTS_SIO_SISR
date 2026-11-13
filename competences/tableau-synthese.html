@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tableau de synthèse E5 — Portfolio Poupard Evan</title>
   <link rel="stylesheet" href="../assets/css/style.css">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='40' fill='%2360C6EC'/%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23003B7A'/%3E%3Ctext x='32' y='42' font-family='Arial' font-weight='700' font-size='28' text-anchor='middle' fill='%2360C6EC'%3EEP%3C/text%3E%3C/svg%3E">
   <style>
     .doc-frame {
       margin: 1.5rem 0 1rem;
@@ -35,15 +35,18 @@
 
   <header class="site-header">
     <div class="container nav">
-      <a href="../index.html" class="nav-brand"><span class="dot"></span>POUPARD EVAN / SIO·SISR</a>
-      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">MENU</button>
-      <nav>
+      <a href="../index.html" class="nav-brand">
+        <span class="brand-mark" aria-hidden="true">EP</span>
+        <span class="brand-text">Poupard Evan<small>BTS SIO · option SISR</small></span>
+      </a>
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false"><span class="bars" aria-hidden="true"></span>Menu</button>
+      <nav aria-label="Navigation principale">
         <ul class="nav-list">
           <li><a href="../index.html">Accueil</a></li>
           <li><a href="../entreprise.html">Entreprise</a></li>
           <li><a href="../cv.html">CV</a></li>
           <li><a href="../competences.html" aria-current="page">Compétences</a></li>
-          <li><a href="../situations.html">Situations Pro</a></li>
+          <li><a href="../situations.html">Situations pro</a></li>
           <li><a href="../realisations.html">Réalisations</a></li>
           <li><a href="../veille.html">Veille</a></li>
         </ul>
@@ -53,8 +56,8 @@
 
   <main>
     <section class="container page-head">
-      <a href="../competences.html" class="mono" style="text-decoration: none;">← Retour aux compétences</a>
-      <span class="mono" style="display:block; margin-top: 1.5rem;">// ANNEXE 8-1 — Épreuve E5</span>
+      <a href="../competences.html" class="back-link">← Retour aux compétences</a>
+      <span class="mono kicker">ANNEXE 8-1 — Épreuve E5</span>
       <h1>Tableau de synthèse des réalisations professionnelles</h1>
       <p class="lead">
         Document officiel de l'Annexe 8-1 présenté au jury lors de
@@ -63,8 +66,19 @@
       </p>
     </section>
 
-    <section class="container" style="padding-bottom: clamp(2rem, 5vw, 3.5rem);">
+    <section class="container">
 
+      <div class="matrix-wrap">
+        <table class="matrix">
+          <thead><tr><th scope="col">Situation</th><th scope="col">Période</th><th scope="col" title="Gérer le patrimoine informatique"><span class="badge badge-c">C1</span></th><th scope="col" title="Répondre aux incidents et aux demandes d'assistance et d'évolution"><span class="badge badge-c">C2</span></th><th scope="col" title="Développer la présence en ligne de l'organisation"><span class="badge badge-c">C3</span></th><th scope="col" title="Travailler en mode projet"><span class="badge badge-c">C4</span></th><th scope="col" title="Mettre à disposition des utilisateurs un service informatique"><span class="badge badge-c">C5</span></th><th scope="col" title="Organiser son développement professionnel"><span class="badge badge-c">C6</span></th></tr></thead>
+          <tbody>
+            <tr><th scope="row"><a href="../situations/sp1-deploiement-poste-hp.html"><span class="badge badge-sp">SP1</span><span>Préparation et déploiement d'un poste utilisateur</span></a></th><td class="m-date">15/09/25</td><td><span class=tick>✓</span></td><td></td><td></td><td></td><td><span class=tick>✓</span></td><td></td></tr><tr><th scope="row"><a href="../situations/sp2-traitement-tickets.html"><span class="badge badge-sp">SP2</span><span>Traitement des tickets de support utilisateur</span></a></th><td class="m-date">01/10/25 au 30/06/26</td><td></td><td><span class=tick>✓</span></td><td></td><td></td><td><span class=tick>✓</span></td><td><span class=tick>✓</span></td></tr><tr><th scope="row"><a href="../situations/sp3-ouverture-chantier.html"><span class="badge badge-sp">SP3</span><span>Ouverture d'un nouveau chantier</span></a></th><td class="m-date">02/02/26 au 27/02/26</td><td><span class=tick>✓</span></td><td></td><td></td><td><span class=tick>✓</span></td><td><span class=tick>✓</span></td><td></td></tr><tr><th scope="row"><a href="../situations/sp4-procedure-o365-mobile.html"><span class="badge badge-sp">SP4</span><span>Procédure de dépannage Microsoft 365 sur mobile</span></a></th><td class="m-date">05/05/26 au 06/05/26</td><td></td><td><span class=tick>✓</span></td><td></td><td></td><td><span class=tick>✓</span></td><td><span class=tick>✓</span></td></tr><tr><th scope="row"><a href="../situations/sp5-remplacement-poste.html"><span class="badge badge-sp">SP5</span><span>Panne d'un poste : PC de prêt et SAV</span></a></th><td class="m-date">25/05/26 au 24/07/26</td><td><span class=tick>✓</span></td><td><span class=tick>✓</span></td><td></td><td></td><td><span class=tick>✓</span></td><td></td></tr><tr><th scope="row"><a href="../situations/sp6-cloture-chantier.html"><span class="badge badge-sp">SP6</span><span>Clôture informatique d'un chantier</span></a></th><td class="m-date">05/10/26 au 09/10/26</td><td><span class=tick>✓</span></td><td></td><td></td><td><span class=tick>✓</span></td><td></td><td></td></tr><tr><th scope="row"><a href="../situations/sp7-refonte-depot-cagnes.html"><span class="badge badge-sp">SP7</span><span>Refonte du dépôt de Cagnes-sur-Mer</span></a></th><td class="m-date">12/10/26 au 06/11/26</td><td><span class=tick>✓</span></td><td></td><td></td><td><span class=tick>✓</span></td><td><span class=tick>✓</span></td><td></td></tr><tr><th scope="row"><a href="../situations/sp8-imprimante-chantier.html"><span class="badge badge-sp">SP8</span><span>Installation d'une imprimante sur chantier</span></a></th><td class="m-date">10/11/26</td><td><span class=tick>✓</span></td><td></td><td></td><td><span class=tick>✓</span></td><td><span class=tick>✓</span></td><td></td></tr><tr><th scope="row"><a href="../situations/sp9-creation-compte-utilisateur.html"><span class="badge badge-sp">SP9</span><span>Création d'un compte utilisateur</span></a></th><td class="m-date">12/11/26 au 13/11/26</td><td><span class=tick>✓</span></td><td></td><td></td><td></td><td><span class=tick>✓</span></td><td></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <ul class="matrix-legend"><li><span class="badge badge-c">C1</span> Gérer le patrimoine informatique</li><li><span class="badge badge-c">C2</span> Répondre aux incidents et aux demandes d'assistance et d'évolution</li><li><span class="badge badge-c">C3</span> Développer la présence en ligne de l'organisation</li><li><span class="badge badge-c">C4</span> Travailler en mode projet</li><li><span class="badge badge-c">C5</span> Mettre à disposition des utilisateurs un service informatique</li><li><span class="badge badge-c">C6</span> Organiser son développement professionnel</li></ul>
+
+      <h2 class="section-title">Document officiel (PDF)</h2>
       <div class="doc-frame">
         <iframe
           src="../assets/files/E5_Synthese_POUPARD_Evan.pdf#view=FitH&toolbar=1"
@@ -83,10 +97,14 @@
 
   <footer class="site-footer">
     <div class="container footer-grid">
-      <span class="mono">© 2025 — Poupard Evan · Portfolio BTS SIO SISR</span>
+      <div class="footer-id">
+        <span class="brand-mark brand-mark--sm" aria-hidden="true">EP</span>
+        <span>Poupard Evan · Portfolio BTS SIO SISR · 2025–2027</span>
+      </div>
       <div class="footer-links">
         <a href="mailto:evan.pprd@gmail.com">Email</a>
         <a href="https://www.linkedin.com/in/evan-poupard" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="../cv.html">CV</a>
       </div>
     </div>
   </footer>

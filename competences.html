@@ -5,21 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Compétences — Portfolio Poupard Evan</title>
   <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='40' fill='%2360C6EC'/%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23003B7A'/%3E%3Ctext x='32' y='42' font-family='Arial' font-weight='700' font-size='28' text-anchor='middle' fill='%2360C6EC'%3EEP%3C/text%3E%3C/svg%3E">
 </head>
 <body>
 
   <header class="site-header">
     <div class="container nav">
-      <a href="index.html" class="nav-brand"><span class="dot"></span>POUPARD EVAN / SIO·SISR</a>
-      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">MENU</button>
-      <nav>
+      <a href="index.html" class="nav-brand">
+        <span class="brand-mark" aria-hidden="true">EP</span>
+        <span class="brand-text">Poupard Evan<small>BTS SIO · option SISR</small></span>
+      </a>
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false"><span class="bars" aria-hidden="true"></span>Menu</button>
+      <nav aria-label="Navigation principale">
         <ul class="nav-list">
           <li><a href="index.html">Accueil</a></li>
           <li><a href="entreprise.html">Entreprise</a></li>
           <li><a href="cv.html">CV</a></li>
           <li><a href="competences.html" aria-current="page">Compétences</a></li>
-          <li><a href="situations.html">Situations Pro</a></li>
+          <li><a href="situations.html">Situations pro</a></li>
           <li><a href="realisations.html">Réalisations</a></li>
           <li><a href="veille.html">Veille</a></li>
         </ul>
@@ -29,7 +32,7 @@
 
   <main>
     <section class="container page-head">
-      <span class="mono">// 03 — Référentiel BTS SIO option SISR</span>
+      <span class="mono">Référentiel BTS SIO option SISR</span>
       <h1>Compétences</h1>
       <p class="lead">
         Les 6 compétences du référentiel BTS SIO SISR, telles qu'elles
@@ -40,58 +43,51 @@
 
     <section class="container">
 
-      <div style="margin-bottom: clamp(2rem, 4vw, 3rem); padding: 1.4rem 1.5rem; background: var(--surface); border: 1px solid var(--line); border-left: 3px solid var(--cyan); border-radius: var(--radius); display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; justify-content: space-between;">
+      <div class="banner">
         <div>
-          <span class="mono" style="color: var(--cyan); display: block; margin-bottom: 0.3rem;">// Annexe 8-1</span>
-          <h3 style="margin-bottom: 0.3rem;">Tableau de synthèse E5</h3>
-          <p style="margin: 0; color: var(--ink-soft); font-size: 0.95rem;">Vue croisée situations × compétences, format officiel de l'épreuve E5.</p>
+          <span class="mono">Annexe 8-1</span>
+          <h3>Tableau de synthèse E5</h3>
+          <p>Vue croisée situations × compétences, format officiel de l'épreuve E5.</p>
         </div>
         <a href="competences/tableau-synthese.html" class="btn btn-outline btn-arrow">Consulter le tableau</a>
       </div>
 
-      <span class="mono">Référentiel BTS SIO — option SISR</span>
-      <div class="cards" style="margin-top: 1.2rem;">
-
-        <a href="competences/c-gerer-patrimoine.html" class="card">
-          <span class="num">C 01</span>
+      <div class="cards">
+        <a href="competences/c-gerer-patrimoine.html" class="card card-comp">
+          <span class="card-top"><span class="badge badge-c badge-lg">C1</span></span>
           <h3>Gérer le patrimoine informatique</h3>
-          <p>Recenser, exploiter les référentiels, gérer les habilitations, la continuité de service et les sauvegardes.</p>
-          <span class="arrow">Voir le détail →</span>
+          <p>Recenser les ressources, exploiter les référentiels, gérer les habilitations, la continuité de service et les sauvegardes.</p>
+          <span class="card-foot"><span class="chips"><span class="chip">SP1</span><span class="chip">SP3</span><span class="chip">SP5</span><span class="chip">SP6</span><span class="chip">SP7</span><span class="chip">SP8</span><span class="chip">SP9</span></span><span class="arrow">Voir le détail</span></span>
         </a>
-
-        <a href="competences/c-repondre-incidents.html" class="card">
-          <span class="num">C 02</span>
+        <a href="competences/c-repondre-incidents.html" class="card card-comp">
+          <span class="card-top"><span class="badge badge-c badge-lg">C2</span></span>
           <h3>Répondre aux incidents et aux demandes d'assistance et d'évolution</h3>
           <p>Collecter, suivre et orienter les demandes ; traiter les incidents réseau, système et applicatifs.</p>
-          <span class="arrow">Voir le détail →</span>
+          <span class="card-foot"><span class="chips"><span class="chip">SP2</span><span class="chip">SP4</span><span class="chip">SP5</span></span><span class="arrow">Voir le détail</span></span>
         </a>
-
-        <a href="competences/c-presence-en-ligne.html" class="card">
-          <span class="num">C 03</span>
+        <a href="competences/c-presence-en-ligne.html" class="card card-comp card-muted">
+          <span class="card-top"><span class="badge badge-c badge-lg">C3</span></span>
           <h3>Développer la présence en ligne de l'organisation</h3>
-          <p>Compétence non mobilisée dans mes situations : elle relève de la communication numérique, hors périmètre d'un technicien SISR en infrastructure.</p>
-          <span class="arrow">Voir le détail →</span>
+          <p>Compétence non mobilisée : elle relève de la communication numérique, hors du périmètre d'un technicien SISR en infrastructure.</p>
+          <span class="card-foot"><span class="chip chip-muted">Non mobilisée</span><span class="arrow">Voir le détail</span></span>
         </a>
-
-        <a href="competences/c-mode-projet.html" class="card">
-          <span class="num">C 04</span>
+        <a href="competences/c-mode-projet.html" class="card card-comp">
+          <span class="card-top"><span class="badge badge-c badge-lg">C4</span></span>
           <h3>Travailler en mode projet</h3>
           <p>Analyser les objectifs et l'organisation d'un projet, planifier les activités, suivre les indicateurs.</p>
-          <span class="arrow">Voir le détail →</span>
+          <span class="card-foot"><span class="chips"><span class="chip">SP3</span><span class="chip">SP6</span><span class="chip">SP7</span><span class="chip">SP8</span></span><span class="arrow">Voir le détail</span></span>
         </a>
-
-        <a href="competences/c-mettre-disposition.html" class="card">
-          <span class="num">C 05</span>
+        <a href="competences/c-mettre-disposition.html" class="card card-comp">
+          <span class="card-top"><span class="badge badge-c badge-lg">C5</span></span>
           <h3>Mettre à disposition des utilisateurs un service informatique</h3>
           <p>Réaliser les tests d'intégration et d'acceptation, déployer un service et accompagner les utilisateurs.</p>
-          <span class="arrow">Voir le détail →</span>
+          <span class="card-foot"><span class="chips"><span class="chip">SP1</span><span class="chip">SP2</span><span class="chip">SP3</span><span class="chip">SP4</span><span class="chip">SP5</span><span class="chip">SP7</span><span class="chip">SP8</span><span class="chip">SP9</span></span><span class="arrow">Voir le détail</span></span>
         </a>
-
-        <a href="competences/c-developpement-pro.html" class="card">
-          <span class="num">C 06</span>
+        <a href="competences/c-developpement-pro.html" class="card card-comp">
+          <span class="card-top"><span class="badge badge-c badge-lg">C6</span></span>
           <h3>Organiser son développement professionnel</h3>
           <p>Mettre en place son environnement d'apprentissage, sa veille technologique et son identité professionnelle.</p>
-          <span class="arrow">Voir le détail →</span>
+          <span class="card-foot"><span class="chips"><span class="chip">SP2</span><span class="chip">SP4</span></span><span class="arrow">Voir le détail</span></span>
         </a>
       </div>
     </section>
@@ -99,10 +95,14 @@
 
   <footer class="site-footer">
     <div class="container footer-grid">
-      <span class="mono">© 2025 — Poupard Evan · Portfolio BTS SIO SISR</span>
+      <div class="footer-id">
+        <span class="brand-mark brand-mark--sm" aria-hidden="true">EP</span>
+        <span>Poupard Evan · Portfolio BTS SIO SISR · 2025–2027</span>
+      </div>
       <div class="footer-links">
         <a href="mailto:evan.pprd@gmail.com">Email</a>
         <a href="https://www.linkedin.com/in/evan-poupard" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="cv.html">CV</a>
       </div>
     </div>
   </footer>

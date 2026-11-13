@@ -6,7 +6,7 @@
   <title>Accueil — Portfolio Poupard Evan</title>
   <meta name="description" content="Portfolio de Poupard Evan, étudiant en BTS SIO SISR à UFITECH, alternant chez Vinci Construction.">
   <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='40' fill='%230aa5c2'/%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23003B7A'/%3E%3Ctext x='32' y='42' font-family='Arial' font-weight='700' font-size='28' text-anchor='middle' fill='%2360C6EC'%3EEP%3C/text%3E%3C/svg%3E">
 </head>
 <body>
 
@@ -14,17 +14,17 @@
   <header class="site-header">
     <div class="container nav">
       <a href="index.html" class="nav-brand">
-        <span class="dot"></span>
-        POUPARD EVAN / SIO·SISR
+        <span class="brand-mark" aria-hidden="true">EP</span>
+        <span class="brand-text">Poupard Evan<small>BTS SIO · option SISR</small></span>
       </a>
-      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">MENU</button>
-      <nav>
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false"><span class="bars" aria-hidden="true"></span>Menu</button>
+      <nav aria-label="Navigation principale">
         <ul class="nav-list">
           <li><a href="index.html" aria-current="page">Accueil</a></li>
           <li><a href="entreprise.html">Entreprise</a></li>
           <li><a href="cv.html">CV</a></li>
           <li><a href="competences.html">Compétences</a></li>
-          <li><a href="situations.html">Situations Pro</a></li>
+          <li><a href="situations.html">Situations pro</a></li>
           <li><a href="realisations.html">Réalisations</a></li>
           <li><a href="veille.html">Veille</a></li>
         </ul>
@@ -39,11 +39,20 @@
         <h1>Poupard Evan,<br><span class="accent">technicien informatique</span> en alternance.</h1>
 
         <p class="lead">
-          Étudiant à UFITECH, alternant chez Vinci Construction.
+          Étudiant en BTS SIO option SISR au CFA UFITECH, alternant chez Vinci Construction.
           Passionné d'infrastructure réseau et de cybersécurité — ce portfolio
           documente mes situations professionnelles, compétences et veille
           technologique au fil de la formation.
         </p>
+        <ul class="stats">
+          <li><strong>9</strong><span>situations professionnelles</span></li>
+          <li><strong>5</strong><span>compétences mobilisées sur 6</span></li>
+          <li><strong>3</strong><span>exemples de veille</span></li>
+        </ul>
+        <div class="hero-actions">
+          <a href="situations.html" class="btn btn-primary btn-arrow">Voir les situations</a>
+          <a href="cv.html" class="btn btn-outline">Consulter mon CV</a>
+        </div>
       </div>
 
       <div class="hero-photo reveal">
@@ -55,7 +64,7 @@
     <section class="container">
       <div class="branding-strip reveal">
         <div class="branding-label">
-          <span class="mono">// Formation × Alternance</span>
+          <span class="mono">Formation × Alternance</span>
           <span class="role">CFA &amp; entreprise</span>
         </div>
         <div class="branding-divider" aria-hidden="true"></div>
@@ -72,28 +81,28 @@
 
     <!-- ============ QUICK NAV CARDS ============ -->
     <section class="container section">
-      <span class="mono">// Explorer le portfolio</span>
-      <div class="cards" style="margin-top: 1.2rem;">
+      <span class="mono">Explorer le portfolio</span>
+      <div class="cards cards--4">
         <a href="entreprise.html" class="card reveal">
-          <span class="num">01</span>
+          <span class="card-top"><span class="badge badge-sp">01</span></span>
           <h3>Entreprise</h3>
           <p>Présentation de Vinci Construction et de ma mission de technicien informatique en alternance.</p>
           <span class="arrow">Découvrir →</span>
         </a>
         <a href="competences.html" class="card reveal">
-          <span class="num">02</span>
+          <span class="card-top"><span class="badge badge-sp">02</span></span>
           <h3>Compétences</h3>
           <p>Vue d'ensemble des compétences acquises en entreprise et au CFA.</p>
           <span class="arrow">Consulter →</span>
         </a>
         <a href="situations.html" class="card reveal">
-          <span class="num">03</span>
+          <span class="card-top"><span class="badge badge-sp">03</span></span>
           <h3>Situations professionnelles</h3>
-          <p>Missions concrètes réalisées en entreprise : contexte, déroulé technique et résultats.</p>
+          <p>Missions concrètes réalisées en entreprise&nbsp;: contexte, déroulé technique et résultats.</p>
           <span class="arrow">Voir les missions →</span>
         </a>
         <a href="veille.html" class="card reveal">
-          <span class="num">04</span>
+          <span class="card-top"><span class="badge badge-sp">04</span></span>
           <h3>Veille technologique</h3>
           <p>Suivi de l'actualité IT et cybersécurité, méthode de veille et exemples détaillés.</p>
           <span class="arrow">Lire la veille →</span>
@@ -105,10 +114,14 @@
   <!-- ============ FOOTER ============ -->
   <footer class="site-footer">
     <div class="container footer-grid">
-      <span class="mono">© 2025 — Poupard Evan · Portfolio BTS SIO SISR</span>
+      <div class="footer-id">
+        <span class="brand-mark brand-mark--sm" aria-hidden="true">EP</span>
+        <span>Poupard Evan · Portfolio BTS SIO SISR · 2025–2027</span>
+      </div>
       <div class="footer-links">
         <a href="mailto:evan.pprd@gmail.com">Email</a>
         <a href="https://www.linkedin.com/in/evan-poupard" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="cv.html">CV</a>
       </div>
     </div>
   </footer>

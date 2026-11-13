@@ -5,21 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Microsoft modern workplace : Intune, AutoPilot, Entra ID — Portfolio Poupard Evan</title>
   <link rel="stylesheet" href="../assets/css/style.css">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='40' fill='%2360C6EC'/%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23003B7A'/%3E%3Ctext x='32' y='42' font-family='Arial' font-weight='700' font-size='28' text-anchor='middle' fill='%2360C6EC'%3EEP%3C/text%3E%3C/svg%3E">
 </head>
 <body>
 
   <header class="site-header">
     <div class="container nav">
-      <a href="../index.html" class="nav-brand"><span class="dot"></span>POUPARD EVAN / SIO·SISR</a>
-      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">MENU</button>
-      <nav>
+      <a href="../index.html" class="nav-brand">
+        <span class="brand-mark" aria-hidden="true">EP</span>
+        <span class="brand-text">Poupard Evan<small>BTS SIO · option SISR</small></span>
+      </a>
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false"><span class="bars" aria-hidden="true"></span>Menu</button>
+      <nav aria-label="Navigation principale">
         <ul class="nav-list">
           <li><a href="../index.html">Accueil</a></li>
           <li><a href="../entreprise.html">Entreprise</a></li>
           <li><a href="../cv.html">CV</a></li>
           <li><a href="../competences.html">Compétences</a></li>
-          <li><a href="../situations.html">Situations Pro</a></li>
+          <li><a href="../situations.html">Situations pro</a></li>
           <li><a href="../realisations.html">Réalisations</a></li>
           <li><a href="../veille.html" aria-current="page">Veille</a></li>
         </ul>
@@ -29,8 +32,8 @@
 
   <main>
     <section class="container page-head">
-      <a href="../veille.html" class="mono" style="text-decoration: none;">← Retour à la veille</a>
-      <span class="mono" style="display:block; margin-top: 1.5rem;">// VEILLE 02 · THÈME&nbsp;: POSTE DE TRAVAIL &amp; IDENTITÉS</span>
+      <a href="../veille.html" class="back-link">← Retour à la veille</a>
+      <span class="mono kicker">VEILLE 02 · THÈME&nbsp;: POSTE DE TRAVAIL &amp; IDENTITÉS</span>
       <h1>Microsoft modern workplace&nbsp;: Intune, AutoPilot et Entra ID</h1>
     </section>
 
@@ -50,14 +53,12 @@
 
         <h2 id="contexte">Contexte</h2>
         <p>
-          Dans mon quotidien chez Vinci Construction Bâtiment Sud-Est,
+          Dans mon quotidien chez Vinci Construction,
           la gestion du poste de travail s'appuie entièrement sur la
           suite <strong>Microsoft 365</strong>, les outils de
           <strong>déploiement AutoPilot et Intune</strong>, et sur
           <strong>Entra ID</strong> (ex-Azure AD) pour les identités.
-          Ces outils sont au cœur de mes situations SP 01 (déploiement
-          d'un poste), SP 06 (création de compte) et SP 07 (PC de prêt
-          + SAV).
+          Ces outils sont au cœur de mes situations SP1 (déploiement d'un poste), SP5 (PC de prêt et SAV) et SP9 (création de compte).
         </p>
         <p>
           C'est un domaine qui bouge très vite&nbsp;: Microsoft publie
@@ -92,22 +93,21 @@
             sécurité.
           </li>
           <li>
-            <strong>Fin de vie Active Directory on-premises</strong>
-            dans les groupes&nbsp;: stratégies de bascule hybride puis
+            <strong>Transition de l'Active Directory on-premises</strong>
+            dans les grands groupes&nbsp;: stratégies de bascule hybride puis
             cloud, synchronisation des identités.
           </li>
         </ul>
 
         <h2 id="interet">Intérêt pour l'entreprise</h2>
         <p>
-          Pour Vinci Construction Bâtiment Sud-Est, qui opère un parc
+          Pour Vinci Construction, qui gère un parc
           de postes et un annuaire de plusieurs milliers
           d'utilisateurs, cette veille a trois impacts directs&nbsp;:
         </p>
         <ul>
           <li>
-            <strong>Maintenir en condition</strong> les procédures de
-            déploiement (SP 01) lorsque Microsoft change une étape
+            <strong>Maintenir à jour</strong> les procédures de déploiement (SP1) lorsque Microsoft change une étape
             d'AutoPilot ou une stratégie Intune&nbsp;;
           </li>
           <li>
@@ -119,7 +119,7 @@
           </li>
           <li>
             <strong>Anticiper les évolutions</strong> majeures de
-            l'écosystème pour ne pas subir un changement&nbsp;:
+            l'écosystème pour ne pas subir les changements&nbsp;:
             préparer la bascule progressive AD on-premises → Entra ID,
             tester les nouveaux profils Intune en amont.
           </li>
@@ -135,9 +135,8 @@
 
         <h2 id="conclusion">Conclusion</h2>
         <p>
-          Cette veille est la plus proche de mon quotidien
-          prêt à l'emploi. Elle me permet de tenir à jour les procédures
-          que j'applique dans les SP 01, SP 06 et SP 07, et d'identifier
+          Cette veille est la plus proche de mon quotidien de technicien. Elle me permet de tenir à jour les procédures
+          que j'applique dans les SP1, SP5 et SP9, et d'identifier
           en amont les évolutions à anticiper pour le parc Vinci.
         </p>
 
@@ -147,10 +146,14 @@
 
   <footer class="site-footer">
     <div class="container footer-grid">
-      <span class="mono">© 2025 — Poupard Evan · Portfolio BTS SIO SISR</span>
+      <div class="footer-id">
+        <span class="brand-mark brand-mark--sm" aria-hidden="true">EP</span>
+        <span>Poupard Evan · Portfolio BTS SIO SISR · 2025–2027</span>
+      </div>
       <div class="footer-links">
         <a href="mailto:evan.pprd@gmail.com">Email</a>
         <a href="https://www.linkedin.com/in/evan-poupard" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="../cv.html">CV</a>
       </div>
     </div>
   </footer>

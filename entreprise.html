@@ -5,21 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Entreprise — Portfolio Poupard Evan</title>
   <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='40' fill='%230aa5c2'/%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23003B7A'/%3E%3Ctext x='32' y='42' font-family='Arial' font-weight='700' font-size='28' text-anchor='middle' fill='%2360C6EC'%3EEP%3C/text%3E%3C/svg%3E">
 </head>
 <body>
 
   <header class="site-header">
     <div class="container nav">
-      <a href="index.html" class="nav-brand"><span class="dot"></span>POUPARD EVAN / SIO·SISR</a>
-      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">MENU</button>
-      <nav>
+      <a href="index.html" class="nav-brand">
+        <span class="brand-mark" aria-hidden="true">EP</span>
+        <span class="brand-text">Poupard Evan<small>BTS SIO · option SISR</small></span>
+      </a>
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false"><span class="bars" aria-hidden="true"></span>Menu</button>
+      <nav aria-label="Navigation principale">
         <ul class="nav-list">
           <li><a href="index.html">Accueil</a></li>
           <li><a href="entreprise.html" aria-current="page">Entreprise</a></li>
           <li><a href="cv.html">CV</a></li>
           <li><a href="competences.html">Compétences</a></li>
-          <li><a href="situations.html">Situations Pro</a></li>
+          <li><a href="situations.html">Situations pro</a></li>
           <li><a href="realisations.html">Réalisations</a></li>
           <li><a href="veille.html">Veille</a></li>
         </ul>
@@ -29,8 +32,8 @@
 
   <main>
     <section class="container page-head">
-      <span class="mono">// 01 — Entreprise d'accueil</span>
-      <h1>Vinci Construction Bâtiment Sud-Est</h1>
+      <span class="mono">Entreprise d'accueil</span>
+      <h1>Vinci Construction</h1>
       <p class="lead">Mon entreprise d'alternance, où j'occupe un poste de technicien informatique au sein du service IT de l'agence du Mercantour.</p>
     </section>
 
@@ -48,10 +51,7 @@
           <span class="mono">À propos</span>
           <h3>Présentation de l'entreprise</h3>
           <p>
-            Mon contrat d'alternance est rattaché à <strong>Vinci Construction Bâtiment Sud-Est</strong>,
-            filiale du groupe Vinci spécialisée dans le bâtiment et couvrant une zone large
-            qui s'étend de <strong>Monaco à Marseille</strong>, en passant par Nice,
-            Aix-en-Provence et Avignon.
+            Mon contrat d'alternance est rattaché à <strong>Vinci Construction</strong>, pôle du groupe VINCI dédié aux métiers de la construction. Le périmètre suivi par notre service informatique s'étend de <strong>Monaco à Marseille</strong>, en passant par Nice, Aix-en-Provence et Avignon.
           </p>
         </div>
 
@@ -75,7 +75,7 @@
             En tant qu'alternant technicien informatique, j'interviens en soutien
             de l'équipe IT sur l'ensemble du périmètre de l'agence :
           </p>
-          <ul style="margin: 0.8rem 0 0 1.4rem;">
+          <ul class="list">
             <li>traitement des tickets de support utilisateur ;</li>
             <li>préparation et déploiement des équipements (PC, routeurs, switchs, bornes Wi-Fi, pare-feux) ;</li>
             <li>suivi à distance ou sur site (chantiers, dépôts, agences) des besoins et incidents ;</li>
@@ -89,7 +89,7 @@
           <p>
             <strong>Rythme d'alternance :</strong> 3 jours en entreprise, 2 jours en formation.<br>
             <strong>Tuteur entreprise :</strong> François Pons, Responsable Informatique.<br>
-            <strong>Référent pédagogique :</strong> Lucas Chapel, formateur à UFITECH.
+            <strong>Référents CFA :</strong> Lucas Chapel et Antoine Beth, formateurs à UFITECH.
           </p>
         </div>
       </div>
@@ -98,10 +98,14 @@
 
   <footer class="site-footer">
     <div class="container footer-grid">
-      <span class="mono">© 2025 — Poupard Evan · Portfolio BTS SIO SISR</span>
+      <div class="footer-id">
+        <span class="brand-mark brand-mark--sm" aria-hidden="true">EP</span>
+        <span>Poupard Evan · Portfolio BTS SIO SISR · 2025–2027</span>
+      </div>
       <div class="footer-links">
         <a href="mailto:evan.pprd@gmail.com">Email</a>
         <a href="https://www.linkedin.com/in/evan-poupard" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="cv.html">CV</a>
       </div>
     </div>
   </footer>

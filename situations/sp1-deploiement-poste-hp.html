@@ -5,21 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Déploiement d'un poste utilisateur HP — Portfolio Poupard Evan</title>
   <link rel="stylesheet" href="../assets/css/style.css">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='40' fill='%2360C6EC'/%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23003B7A'/%3E%3Ctext x='32' y='42' font-family='Arial' font-weight='700' font-size='28' text-anchor='middle' fill='%2360C6EC'%3EEP%3C/text%3E%3C/svg%3E">
 </head>
 <body>
 
   <header class="site-header">
     <div class="container nav">
-      <a href="../index.html" class="nav-brand"><span class="dot"></span>POUPARD EVAN / SIO·SISR</a>
-      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">MENU</button>
-      <nav>
+      <a href="../index.html" class="nav-brand">
+        <span class="brand-mark" aria-hidden="true">EP</span>
+        <span class="brand-text">Poupard Evan<small>BTS SIO · option SISR</small></span>
+      </a>
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false"><span class="bars" aria-hidden="true"></span>Menu</button>
+      <nav aria-label="Navigation principale">
         <ul class="nav-list">
           <li><a href="../index.html">Accueil</a></li>
           <li><a href="../entreprise.html">Entreprise</a></li>
           <li><a href="../cv.html">CV</a></li>
           <li><a href="../competences.html">Compétences</a></li>
-          <li><a href="../situations.html" aria-current="page">Situations Pro</a></li>
+          <li><a href="../situations.html" aria-current="page">Situations pro</a></li>
           <li><a href="../realisations.html">Réalisations</a></li>
           <li><a href="../veille.html">Veille</a></li>
         </ul>
@@ -29,12 +32,12 @@
 
   <main>
     <section class="container page-head">
-      <a href="../situations.html" class="mono" style="text-decoration: none;">← Retour aux situations</a>
-      <span class="mono" style="display:block; margin-top: 1.5rem;">// SITUATION PROFESSIONNELLE 01</span>
+      <a href="../situations.html" class="back-link">← Retour aux situations</a>
+      <div class="kicker-row"><span class="badge badge-sp badge-lg">SP1</span><span class="mono">Situation professionnelle 1</span></div>
       <h1>Préparation et déploiement d'un poste utilisateur</h1>
-      <div style="margin-top: 1.5rem; display: inline-flex; align-items: center; gap: 0.6rem; padding: 0.4rem 0.9rem; background: var(--surface); border: 1px solid var(--line); border-left: 3px solid var(--cyan); border-radius: var(--radius); font-size: 0.9rem; color: var(--ink-soft);">
-        <span class="mono" style="color: var(--cyan); font-weight: 600;">PÉRIODE</span>
-        <span>15 septembre 2025 — 1 jour</span>
+      <div class="meta-row">
+        <span class="meta"><span class="meta-label">Période</span>15 septembre 2025 · 1 jour</span>
+        <span class="meta"><span class="meta-label">Compétences</span><span class="chips"><span class="chip">C1</span><span class="chip">C5</span></span></span>
       </div>
     </section>
 
@@ -64,7 +67,7 @@
         <p>
           Mon rôle consiste à finaliser cette préparation à réception du matériel, à
           configurer le poste en fonction du profil de l'utilisateur final (métier,
-          filiale d'appartenance, applications nécessaires) et à le livrer prêt à l'emploi.
+          entité de rattachement, applications nécessaires) et à le livrer prêt à l'emploi.
         </p>
 
         <h2 id="deroule">Déroulé technique</h2>
@@ -75,7 +78,7 @@
 
         <h3>Étape 1 — Vérification de l'intégration AutoPilot</h3>
         <p>
-          Première vérification au démarrage du poste&nbsp;: s'garantir que le numéro de série
+          Première vérification au démarrage du poste&nbsp;: s'assurer que le numéro de série
           a bien été enregistré côté Microsoft AutoPilot. Sans cette intégration, le poste
           ne pourra pas s'enrôler automatiquement dans Entra ID de l'entreprise
           et la suite de la procédure échouera.
@@ -85,7 +88,7 @@
         <p>
           Pour initialiser le poste au nom de l'utilisateur final, je me connecte à son
           compte Microsoft 365 à l'aide d'un <strong>droit d'accès temporaire (Temporary
-          Access Pass)</strong> généré depuis Azure AD. Ce mécanisme évite de manipuler le
+          Access Pass)</strong> généré depuis Entra ID. Ce mécanisme évite de manipuler le
           mot de passe de l'utilisateur tout en permettant la première authentification
           et la création du profil Windows.
         </p>
@@ -99,7 +102,7 @@
           <li><strong>HP Image Assistant (HP IA)</strong> pour les pilotes, le firmware et les correctifs constructeur.</li>
         </ul>
 
-        <h3>Étape 4 — Pack Office et mise à jour</h3>
+        <h3>Étape 4 — Suite Microsoft 365 et mises à jour</h3>
         <p>
           Connexion à la suite <strong>Microsoft 365</strong> avec le compte professionnel
           de l'utilisateur, puis vérification que toutes les applications sont à jour
@@ -111,30 +114,30 @@
           L'attribution des logiciels métier passe par <strong>Microsoft Azure (Entra ID)</strong>&nbsp;:
           j'ajoute l'utilisateur au groupe correspondant à son profil (par exemple, un
           architecte sera ajouté au groupe donnant droit à <strong>AutoCAD</strong> et
-          <strong>Revit</strong>). Cette appartenance lance l'attribution automatique
+          <strong>Revit</strong>). Cette appartenance déclenche l'attribution automatique
           de la licence, et l'utilisateur peut alors télécharger ses applications depuis
           le <strong>Portail Entreprise</strong> sur le poste.
         </p>
         <figure>
-          <img src="../assets/screenshots/sp1-groupe-azure.png" alt="Groupe Azure réservé AutoCAD">
-          <figcaption>Figure 1 — Exemple d'un groupe Azure réservé à l'attribution de licence AutoCAD.</figcaption>
+          <img src="../assets/screenshots/sp1-groupe-azure.png" alt="Groupe Entra ID dédié à AutoCAD">
+          <figcaption>Figure 1 — Exemple d'un groupe Entra ID dédié à l'attribution de licence AutoCAD.</figcaption>
         </figure>
         <figure>
           <img src="../assets/screenshots/sp1-ajout-membres.png" alt="Ajout d'un membre au groupe Azure">
-          <figcaption>Figure 2 — Ajout d'un utilisateur au groupe pour lancer l'attribution de licence.</figcaption>
+          <figcaption>Figure 2 — Ajout d'un utilisateur au groupe pour déclencher l'attribution de licence.</figcaption>
         </figure>
 
         <h3>Étape 6 — Mappage des lecteurs réseau</h3>
         <p>
-          Dernière étape avant livraison&nbsp;: l'ajout des lecteurs réseau en fonction de
+          Dernière étape avant livraison&nbsp;: le mappage des lecteurs réseau en fonction de
           l'entité d'appartenance de l'utilisateur — par exemple <code>DRTO</code>,
           <code>DUMEZ Côte d'Azur</code>, <code>Vinci Construction Monaco</code>… Ces
-          lecteurs donnent accès aux ressources partagées propres à chaque filiale.
+          lecteurs donnent accès aux ressources partagées propres à chaque entité.
         </p>
 
         <h2 id="conclusion">Conclusion</h2>
         <p>
-          La procédure aboutit à la livraison d'un poste prêt à l'emploi, intégré au domaine,
+          La procédure aboutit à la livraison d'un poste prêt à l'emploi, enrôlé dans Entra ID,
           conforme aux politiques de sécurité et adapté aux besoins métier de l'utilisateur.
           La standardisation de la procédure (AutoPilot, image UNITY, groupes Azure)
           permet un déploiement fiable et reproductible, tout en laissant la marge de
@@ -143,21 +146,23 @@
 
         <h2 id="competences">Compétences validées</h2>
         <p>Cette situation valide les compétences suivantes du référentiel (Annexe 8-1)&nbsp;:</p>
-
-        <div class="cards" style="margin-top: 1.5rem;">
-          <a href="../competences/c-gerer-patrimoine.html" class="card">
-            <span class="num">C 01</span>
-            <h3>Gérer le patrimoine informatique</h3>
-            <p>Recenser, configurer et raccorder les ressources numériques au système d'information.</p>
-            <span class="arrow">Voir la compétence →</span>
+        <div class="comp-list">
+          <a href="../competences/c-gerer-patrimoine.html" class="comp-row">
+            <span class="badge badge-c badge-lg">C1</span>
+            <span class="comp-row-text"><strong>Gérer le patrimoine informatique</strong><small>Recenser, configurer et raccorder les ressources numériques au système d'information.</small></span>
+            <span class="arrow" aria-hidden="true">→</span>
           </a>
-          <a href="../competences/c-mettre-disposition.html" class="card">
-            <span class="num">C 05</span>
-            <h3>Mettre à disposition des utilisateurs un service informatique</h3>
-            <p>Préparer, tester et livrer un service prêt à l'emploi.</p>
-            <span class="arrow">Voir la compétence →</span>
+          <a href="../competences/c-mettre-disposition.html" class="comp-row">
+            <span class="badge badge-c badge-lg">C5</span>
+            <span class="comp-row-text"><strong>Mettre à disposition des utilisateurs un service informatique</strong><small>Préparer, tester et livrer un service opérationnel.</small></span>
+            <span class="arrow" aria-hidden="true">→</span>
           </a>
         </div>
+
+        <nav class="sp-pager" aria-label="Situations voisines">
+          <span></span>
+          <a class="pager next" href="sp2-traitement-tickets.html"><small>Suivante →</small><span>SP2 · Traitement des tickets de support utilisateur</span></a>
+        </nav>
 
       </article>
     </section>
@@ -165,10 +170,14 @@
 
   <footer class="site-footer">
     <div class="container footer-grid">
-      <span class="mono">© 2025 — Poupard Evan · Portfolio BTS SIO SISR</span>
+      <div class="footer-id">
+        <span class="brand-mark brand-mark--sm" aria-hidden="true">EP</span>
+        <span>Poupard Evan · Portfolio BTS SIO SISR · 2025–2027</span>
+      </div>
       <div class="footer-links">
         <a href="mailto:evan.pprd@gmail.com">Email</a>
         <a href="https://www.linkedin.com/in/evan-poupard" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="../cv.html">CV</a>
       </div>
     </div>
   </footer>
